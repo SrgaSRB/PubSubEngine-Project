@@ -1,0 +1,6 @@
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Logging\bin\Debug\Logging.dll
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Logging\bin\Debug\Logging.pdb
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Logging\obj\Debug\Logging.csproj.AssemblyReference.cache
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Logging\obj\Debug\Logging.csproj.CoreCompileInputs.cache
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Logging\obj\Debug\Logging.dll
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Logging\obj\Debug\Logging.pdb

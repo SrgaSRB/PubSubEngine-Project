@@ -1,0 +1,7 @@
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SubscriberClient\bin\Debug\SubscriberClient.exe.config
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SubscriberClient\bin\Debug\SubscriberClient.exe
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SubscriberClient\bin\Debug\SubscriberClient.pdb
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SubscriberClient\obj\Debug\SubscriberClient.csproj.AssemblyReference.cache
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SubscriberClient\obj\Debug\SubscriberClient.csproj.CoreCompileInputs.cache
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SubscriberClient\obj\Debug\SubscriberClient.exe
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SubscriberClient\obj\Debug\SubscriberClient.pdb

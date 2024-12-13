@@ -1,0 +1,7 @@
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PublisherClient\bin\Debug\PublisherClient.exe.config
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PublisherClient\bin\Debug\PublisherClient.exe
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PublisherClient\bin\Debug\PublisherClient.pdb
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PublisherClient\obj\Debug\PublisherClient.csproj.AssemblyReference.cache
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PublisherClient\obj\Debug\PublisherClient.csproj.CoreCompileInputs.cache
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PublisherClient\obj\Debug\PublisherClient.exe
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PublisherClient\obj\Debug\PublisherClient.pdb

@@ -1,0 +1,6 @@
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Contracts\bin\Debug\Contracts.dll
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Contracts\bin\Debug\Contracts.pdb
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Contracts\obj\Debug\Contracts.csproj.AssemblyReference.cache
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Contracts\obj\Debug\Contracts.csproj.CoreCompileInputs.cache
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Contracts\obj\Debug\Contracts.dll
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Contracts\obj\Debug\Contracts.pdb
