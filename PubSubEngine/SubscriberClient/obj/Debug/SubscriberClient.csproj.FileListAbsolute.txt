@@ -5,3 +5,9 @@ C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SubscriberClient\obj\Debug\Sub
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SubscriberClient\obj\Debug\SubscriberClient.csproj.CoreCompileInputs.cache
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SubscriberClient\obj\Debug\SubscriberClient.exe
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SubscriberClient\obj\Debug\SubscriberClient.pdb
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SubscriberClient\bin\Debug\Contracts.dll
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SubscriberClient\bin\Debug\Contracts.pdb
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SubscriberClient\obj\Debug\Subscrib.E4DC4EA2.Up2Date
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SubscriberClient\bin\Debug\PubSubEngine.exe
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SubscriberClient\bin\Debug\PubSubEngine.pdb
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SubscriberClient\bin\Debug\PubSubEngine.exe.config

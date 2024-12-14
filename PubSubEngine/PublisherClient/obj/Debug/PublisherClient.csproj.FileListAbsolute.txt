@@ -5,3 +5,11 @@ C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PublisherClient\obj\Debug\Publ
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PublisherClient\obj\Debug\PublisherClient.csproj.CoreCompileInputs.cache
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PublisherClient\obj\Debug\PublisherClient.exe
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PublisherClient\obj\Debug\PublisherClient.pdb
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PublisherClient\bin\Debug\Contracts.dll
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PublisherClient\bin\Debug\Contracts.pdb
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PublisherClient\obj\Debug\Publishe.0A35BD47.Up2Date
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PublisherClient\bin\Debug\SecurityManager.dll
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PublisherClient\bin\Debug\SecurityManager.pdb
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PublisherClient\bin\Debug\PubSubEngine.exe
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PublisherClient\bin\Debug\PubSubEngine.pdb
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PublisherClient\bin\Debug\PubSubEngine.exe.config

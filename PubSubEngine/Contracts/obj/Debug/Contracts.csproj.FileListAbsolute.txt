@@ -4,3 +4,5 @@ C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Contracts\obj\Debug\Contracts.
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Contracts\obj\Debug\Contracts.csproj.CoreCompileInputs.cache
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Contracts\obj\Debug\Contracts.dll
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Contracts\obj\Debug\Contracts.pdb
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Contracts\obj\Debug\Contracts.AlarmMessagesRES.resources
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Contracts\obj\Debug\Contracts.csproj.GenerateResource.cache

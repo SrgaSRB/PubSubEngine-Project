@@ -1,0 +1,19 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "PubSubEngine\\PubSubEngine.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "SubscriberClient\\SubscriberClient.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "PublisherClient\\PublisherClient.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

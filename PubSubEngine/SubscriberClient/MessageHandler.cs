@@ -10,7 +10,12 @@ namespace SubscriberClient
     //Message decryption (AES)
     //Storing messages in a text database
     //Logging to Windows Event Log
-    internal class MessageHandler
+    public class MessageHandler
     {
+        public void HandleMessage(string topic, string message)
+        {
+            Console.WriteLine($"Subscriber received message on topic '{topic}': {message}");
+        }
     }
+
 }

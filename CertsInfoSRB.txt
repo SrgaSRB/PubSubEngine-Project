@@ -1,0 +1,17 @@
+PubSubEngineCA:
+-Sertifikaciono telo koje izdaje sve ostale sertifikate.
+
+PubSubEngine:
+-Sertifikat servera za identifikaciju i šifrovanje.
+
+Publisher1:
+-Sertifikat klijenta za autentifikaciju Publisher-a prema serveru.
+
+Subscriber1:
+-Sertifikat klijenta za autentifikaciju Subscriber-a prema serveru.
+
+Publisher1_sign:
+-Sertifikat za digitalno potpisivanje poruka od strane Publisher-a.
+
+WrongSign:
+-Sertifikat za testiranje grešaka u verifikaciji digitalnih potpisa.
