@@ -20,16 +20,27 @@ namespace Contracts
         [DataMember]
         public int RiskLevel { get; set; }
 
-        public Alarm(DateTime createdAt, string message, int riskLevel)
+        public Alarm(DateTime createdAt, string topic, int riskLevel)
         {
             CreatedAt = createdAt;
-            Message = message;
+            Message = GetMessageFromTopic(topic);
             RiskLevel = riskLevel;
         }
 
+        private string GetMessageFromTopic(string topic)
+        {
+            return topic switch
+            {
+                "Fire" => AlarmMessages.GetMessage("AlarmFire"),
+                "Flood" => AlarmMessages.GetMessage("AlarmFlood"),
+                "Intruder" => AlarmMessages.GetMessage("AlarmIntruder"),
+                _ => "Unknown alarm", // Default message
+            };
+        }
         public override string ToString()
         {
             return $"[{CreatedAt}] {Message} (Risk: {RiskLevel})";
         }
+
     }
 }

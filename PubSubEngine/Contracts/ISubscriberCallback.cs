@@ -14,5 +14,9 @@ namespace Contracts
 
         [OperationContract(IsOneWay = true)]
         void NewPublisher(string topic);
+
+        [OperationContract(IsOneWay = true)]
+
+        void LogOutPublisher(string topic);
     }
 }

@@ -12,9 +12,14 @@ namespace Contracts
     public interface ISubscriberService
     {
         [OperationContract]
-        void Subscribe(string topic, int minRisk, int maxRisk);
+        bool Subscribe(string topic, int minRisk, int maxRisk);
 
         [OperationContract]
         void Unsubscribe(string topic);
+
+        [OperationContract]
+        List<string> getAllTopics();
+
+
     }
 }

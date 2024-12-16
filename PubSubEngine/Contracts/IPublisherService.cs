@@ -12,9 +12,13 @@ namespace Contracts
     public interface IPublisherService
     {
         [OperationContract]
-        void Publish(string topic, Alarm alarm);
+        bool Publish(string topic, Alarm alarm);
 
         [OperationContract]
         void RegisterPublisher(string topic);
+
+        [OperationContract]
+        bool LogOutPublisher(string topic);
+
     }
 }

@@ -59,5 +59,32 @@ namespace Contracts {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fire detected in the building!.
+        /// </summary>
+        internal static string AlarmFire {
+            get {
+                return ResourceManager.GetString("AlarmFire", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Flood warning in the basement!.
+        /// </summary>
+        internal static string AlarmFlood {
+            get {
+                return ResourceManager.GetString("AlarmFlood", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Intruder detected in Zone 3!.
+        /// </summary>
+        internal static string AlarmIntruder {
+            get {
+                return ResourceManager.GetString("AlarmIntruder", resourceCulture);
+            }
+        }
     }
 }

@@ -20,35 +20,111 @@ namespace PublisherClient
             var factory = new ChannelFactory<IPublisherService>(binding, address);
             var proxy = factory.CreateChannel();
 
-            proxy.RegisterPublisher("Weather");
-            proxy.Publish("Weather", new Alarm(DateTime.Now, "It's sunny today!", 5));
-            proxy.Publish("Weather", new Alarm(DateTime.Now, "Storm is coming!", 80));
+            Console.WriteLine("Publisher is connected with server");
+
+            //proxy.RegisterPublisher("Weather");
+            //proxy.Publish("Weather", new Alarm(DateTime.Now, "It's sunny today!", 5));
+            //proxy.Publish("Weather", new Alarm(DateTime.Now, "Storm is coming!", 80));
+
+            Console.Write("Enter the topic you are posting about: ");
+            string topic = Console.ReadLine();
+
+            try
+            {
+                proxy.RegisterPublisher(topic);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error communicating with the server");
+                Console.WriteLine(e.Message);
+            }
 
             while (true)
             {
-                Console.WriteLine("1 -> Send message to subscribrs");
-                Console.WriteLine("0 -> Exit");
-
+                Console.WriteLine("1 -> Sending messages to subscriptions [MOD]");
+                Console.WriteLine("0 -> Close publisher");
+                Console.WriteLine("Option: ");
                 string command = Console.ReadLine();
+
                 if (command == "0")
                 {
-                    break;
+                    try
+                    {
+                        if (proxy.LogOutPublisher(topic))
+                        {
+                            Console.WriteLine("Publisher successfuly logout! Press Enter to close program...");
+                            break;
+                        }
+                        else
+                        {
+                            Console.WriteLine("ERROR: Publisher failed to logout from topic {0}", topic);
+                        }
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine("Error communicating with the server");
+                        Console.WriteLine(e.Message);
+                    }
                 }
                 else if (command == "1")
                 {
-                    Console.Write("Topic: ");
-                    string topic = Console.ReadLine();
-                    Console.Write("Message: ");
-                    string msg = Console.ReadLine();
-                    Console.WriteLine("Risk level: ");
-                    string riskLevel = Console.ReadLine();
-                    proxy.Publish(topic, new Alarm(DateTime.Now, msg, int.Parse(riskLevel)));
-                }
+                    while (true)
+                    {
+                        MessagesMOD();
+                        Console.WriteLine("Topic [{0}] ", topic);
+                        //Console.Write("Message: ");
+                        //string msg = Console.ReadLine();
+                        Console.Write("Risk level [1-100]: ");
+                        string riskLevel = Console.ReadLine();
 
+                        if (riskLevel == "999")
+                            break;
+                        else if (!int.TryParse(riskLevel, out int intRiskLEvel))
+                        {
+                            Console.WriteLine("ERROR: Risk level must be number in range 1-100 ");
+                            continue;
+                        }
+                        else if (intRiskLEvel < 1 || intRiskLEvel > 100)
+                        {
+                            Console.WriteLine("ERROR: Risk level out of range! Range[1-100] ");
+                            continue;
+                        }
+                        try
+                        {
+                            if (proxy.Publish(topic, new Alarm(DateTime.Now, topic, int.Parse(riskLevel))))
+                            {
+                                Console.WriteLine("Message successfuly sent to subscribers!");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Error sending message to subscribers".ToUpper());
+                            }
+                        }
+                        catch (Exception e)
+                        {
+                            Console.WriteLine("Error communicating with the server");
+                            Console.WriteLine(e.Message);
+                        }
+                    }
+                }
 
             }
 
-            Console.ReadLine();
+
+            Console.ReadKey();
+
         }
+
+        public static void MessagesMOD()
+        {
+            Console.WriteLine();
+            Console.WriteLine("----------------------------------------------------------------------------------------------------");
+            Console.WriteLine("\t\tMessagesMOD [to EXIT tMessagesMOD enter 999 for \"Risk level\"]");
+            Console.WriteLine("----------------------------------------------------------------------------------------------------");
+        }
+
+
+
+
     }
 }
