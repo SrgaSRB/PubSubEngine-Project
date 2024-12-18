@@ -5,6 +5,7 @@ using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 using Contracts;
+using SecurityManager;
 
 namespace PubSubEngine
 {
@@ -18,17 +19,17 @@ namespace PubSubEngine
         private static readonly List<string> topics = new List<string>();
         private static readonly Dictionary<string, List<Alarm>> alarms = new();
 
-        public bool Publish(string topic, Alarm alarm)
+        public bool Publish(string topicEncrypt, Alarm alarmEncript)
         {
             try
             {
-                if (!alarms.ContainsKey(topic))
+                if (!alarms.ContainsKey(topicEncrypt))
                 {
-                    alarms[topic] = new List<Alarm>();
+                    alarms[topicEncrypt] = new List<Alarm>();
                 }
-                alarms[topic].Add(alarm);
+                alarms[topicEncrypt].Add(alarmEncript);
 
-                NotifySubscribers(topic, alarm);
+                NotifySubscribers(topicEncrypt, alarmEncript);
 
                 return true;
             }
@@ -40,75 +41,74 @@ namespace PubSubEngine
             }
         }
 
-        public bool Subscribe(string topic, int minRisk, int maxRisk)
+        public bool Subscribe(string topicEncrypt, string minRiskEncrypt, string maxRiskEncrypt)
         {
             try
             {
                 var callback = OperationContext.Current.GetCallbackChannel<ISubscriberCallback>();
 
-                if (!topicSubscribers.ContainsKey(topic))
+                if (!topicSubscribers.ContainsKey(topicEncrypt))
                 {
-                    topicSubscribers[topic] = new List<ISubscriberCallback>();
+                    topicSubscribers[topicEncrypt] = new List<ISubscriberCallback>();
                 }
 
-                if (!topicSubscribers[topic].Contains(callback))
+                if (!topicSubscribers[topicEncrypt].Contains(callback))
                 {
-                    topicSubscribers[topic].Add(callback);
+                    topicSubscribers[topicEncrypt].Add(callback);
                 }
 
-                Console.WriteLine($"Subscriber subscribed to topic '{topic}' with risk range {minRisk}-{maxRisk}.");
+                Console.WriteLine($"Subscriber subscribed to topic '{AES_Symm_Algorithm.DecryptData<string>(topicEncrypt)}' with risk range {AES_Symm_Algorithm.DecryptData<string>(minRiskEncrypt)}-{AES_Symm_Algorithm.DecryptData<string>(maxRiskEncrypt)}.");
                 return true;
             }
             catch (Exception e)
             {
-                Console.WriteLine("ERROR: Subscriber failed to subscribe to topic {0}", topic);
+                Console.WriteLine("ERROR: Subscriber failed to subscribe to topic {0}", AES_Symm_Algorithm.DecryptData<string>(topicEncrypt));
                 Console.WriteLine(e.Message);
                 return false;
             }
         }
 
-        public void Unsubscribe(string topic)
+        public void Unsubscribe(string topicEncrypt)
         {
             var callback = OperationContext.Current.GetCallbackChannel<ISubscriberCallback>();
 
-            if (topicSubscribers.ContainsKey(topic))
+            if (topicSubscribers.ContainsKey(topicEncrypt))
             {
-                topicSubscribers[topic].Remove(callback);
+                topicSubscribers[topicEncrypt].Remove(callback);
 
-                Console.WriteLine($"Subscriber unsubscribed from topic '{topic}'.");
+                Console.WriteLine($"Subscriber unsubscribed from topic '{AES_Symm_Algorithm.DecryptData<string>(topicEncrypt)}'.");
             }
         }
 
-        public void RegisterPublisher(string topic)
+        public void RegisterPublisher(string topicEncrypt)
         {
-
-            if (!topics.Contains(topic))
+            if (!topics.Contains(topicEncrypt))
             {
-                topics.Add(topic);
-                NotifySubscribersOfNewPublisher(topic, true);
+                topics.Add(topicEncrypt);
+                NotifySubscribersOfNewPublisher(topicEncrypt, true);
             }
         }
 
-        private void NotifySubscribers(string topic, Alarm alarm)
+        private void NotifySubscribers(string topicEncrypt, Alarm alarmEncript)
         {
-            if (topicSubscribers.ContainsKey(topic))
+            if (topicSubscribers.ContainsKey(topicEncrypt))
             {
-                foreach (var subscriber in topicSubscribers[topic])
+                foreach (var subscriber in topicSubscribers[topicEncrypt])
                 {
                     try
                     {
-                        subscriber.ReceiveAlarm(topic, alarm);
+                        subscriber.ReceiveAlarm(topicEncrypt, alarmEncript);
                     }
                     catch (Exception e)
                     {
-                        Console.WriteLine($"Error notifying subscriber for topic '{topic}'.");
+                        Console.WriteLine($"Error notifying subscriber for topic '{AES_Symm_Algorithm.DecryptData<string>(topicEncrypt)}'.");
                         Console.WriteLine(e.Message);
                     }
                 }
             }
         }
 
-        private void NotifySubscribersOfNewPublisher(string topic, bool notifyType)
+        private void NotifySubscribersOfNewPublisher(string topicEncrypt, bool notifyType)
         {
             foreach (var subscriberList in topicSubscribers.Values)
             {
@@ -118,16 +118,16 @@ namespace PubSubEngine
                     {
                         if (notifyType)
                         {
-                            subscriber.NewPublisher(topic);
+                            subscriber.NewPublisher(topicEncrypt);
                         }
                         else
                         {
-                            subscriber.LogOutPublisher(topic);
+                            subscriber.LogOutPublisher(topicEncrypt);
                         }
                     }
                     catch
                     {
-                        Console.WriteLine($"Error notifying subscriber about new publisher for topic '{topic}'.");
+                        Console.WriteLine($"Error notifying subscriber about new publisher for topic '{AES_Symm_Algorithm.DecryptData<string>(topicEncrypt)}'.");
                     }
                 }
             }
@@ -138,23 +138,23 @@ namespace PubSubEngine
             return topics;
         }
 
-        public bool LogOutPublisher(string topic)
+        public bool LogOutPublisher(string topicEncrypt)
         {
             try
             {
-                if (topics.Contains(topic))
+                if (topics.Contains(topicEncrypt))
                 {
-                    topics.Remove(topic);
-                    NotifySubscribersOfNewPublisher(topic, false);
-                    Console.WriteLine("The publisher who was registered on the [{0}] has successfully logged out.", topic);
+                    topics.Remove(topicEncrypt);
+                    NotifySubscribersOfNewPublisher(topicEncrypt, false);
+                    Console.WriteLine("The publisher who was registered on the [{0}] has successfully logged out.", AES_Symm_Algorithm.DecryptData<string>(topicEncrypt));
                     return true;
                 }
-                Console.WriteLine("ERROR: Failed to logout publisher from topic [{0}], topic was not found!", topic);
+                Console.WriteLine("ERROR: Failed to logout publisher from topic [{0}], topic was not found!", AES_Symm_Algorithm.DecryptData<string>(topicEncrypt));
                 return false;
             }
             catch (Exception e)
             {
-                Console.WriteLine("ERROR: Failed to logout publisher from topic [{0}]", topic);
+                Console.WriteLine("ERROR: Failed to logout publisher from topic [{0}]", AES_Symm_Algorithm.DecryptData<string>(topicEncrypt));
                 Console.WriteLine(e.Message);
                 return false;
             }

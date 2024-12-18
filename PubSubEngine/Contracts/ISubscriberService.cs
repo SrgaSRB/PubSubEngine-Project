@@ -12,7 +12,7 @@ namespace Contracts
     public interface ISubscriberService
     {
         [OperationContract]
-        bool Subscribe(string topic, int minRisk, int maxRisk);
+        bool Subscribe(string topic, string minRisk, string maxRisk);
 
         [OperationContract]
         void Unsubscribe(string topic);

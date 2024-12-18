@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Contracts;
+using SecurityManager;
 
 namespace SubscriberClient
 {
@@ -12,9 +13,11 @@ namespace SubscriberClient
     {
         private static readonly List<string> msgLog = new List<string>();
 
-        public void ReceiveAlarm(string topic, Alarm alarm)
+        public void ReceiveAlarm(string topicEncrypt, Alarm alarmEncrypt)
         {
-            string msg = $"Alarm received for topic '{topic}': {alarm}";
+            Alarm alarm = new Alarm(alarmEncrypt.CreatedAt, alarmEncrypt.Topic, alarmEncrypt.RiskLevel);
+
+            string msg = $"Alarm received for topic '{AES_Symm_Algorithm.DecryptData<string>(topicEncrypt)}': {alarm}";
 
             string consoleMsg = "\n--------------------------------------------------Messages--------------------------------------------------\n";
             foreach (string m in msgLog)
@@ -30,15 +33,15 @@ namespace SubscriberClient
             Program.PrintOptions();
         }
 
-        public void NewPublisher(string topic)
+        public void NewPublisher(string topicEncrypt)
         {
-            Console.WriteLine($"New publisher registered for topic '{topic}'.");
+            Console.WriteLine($"New publisher registered for topic '{AES_Symm_Algorithm.DecryptData<string>(topicEncrypt)}'.");
             Program.PrintOptions();
         }
 
-        public void LogOutPublisher(string topic)
+        public void LogOutPublisher(string topicEncrypt)
         {
-            Console.WriteLine($"Publisher for topic [{topic}] logout.");
+            Console.WriteLine($"Publisher for topic [{AES_Symm_Algorithm.DecryptData<string>(topicEncrypt)}] logout.");
             Program.PrintOptions();
         }
     }

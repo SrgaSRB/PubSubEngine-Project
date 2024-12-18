@@ -4,3 +4,6 @@ C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SecurityManager\obj\Debug\Secu
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SecurityManager\obj\Debug\SecurityManager.csproj.CoreCompileInputs.cache
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SecurityManager\obj\Debug\SecurityManager.dll
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SecurityManager\obj\Debug\SecurityManager.pdb
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SecurityManager\bin\Debug\Newtonsoft.Json.dll
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SecurityManager\bin\Debug\Newtonsoft.Json.xml
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SecurityManager\obj\Debug\Security.B8F67C5A.Up2Date

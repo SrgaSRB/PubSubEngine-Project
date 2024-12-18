@@ -8,7 +8,7 @@ namespace Data
 {
     //Stores information about Subscriber subscriptions (which Subscriber is subscribed to which topic)
     //Saves received messages (text files for each Subscriber).
-    internal class SubscriptionDatabase
+    public class SubscriptionDatabase
     {
     }
 }

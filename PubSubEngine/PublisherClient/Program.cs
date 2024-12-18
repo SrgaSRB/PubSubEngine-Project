@@ -7,6 +7,7 @@ using System.ServiceModel;
 using Contracts;
 using PublisherClient;
 using PubSubEngine;
+using SecurityManager;
 
 namespace PublisherClient
 {
@@ -31,7 +32,7 @@ namespace PublisherClient
 
             try
             {
-                proxy.RegisterPublisher(topic);
+                proxy.RegisterPublisher(AES_Symm_Algorithm.EncryptData(topic));
             }
             catch (Exception e)
             {
@@ -50,7 +51,7 @@ namespace PublisherClient
                 {
                     try
                     {
-                        if (proxy.LogOutPublisher(topic))
+                        if (proxy.LogOutPublisher(AES_Symm_Algorithm.EncryptData(topic)))
                         {
                             Console.WriteLine("Publisher successfuly logout! Press Enter to close program...");
                             break;
@@ -91,7 +92,7 @@ namespace PublisherClient
                         }
                         try
                         {
-                            if (proxy.Publish(topic, new Alarm(DateTime.Now, topic, int.Parse(riskLevel))))
+                            if ( proxy.Publish(AES_Symm_Algorithm.EncryptData(topic), new Alarm(DateTime.Now, AES_Symm_Algorithm.EncryptData(topic), AES_Symm_Algorithm.EncryptData(riskLevel))))
                             {
                                 Console.WriteLine("Message successfuly sent to subscribers!");
                             }
@@ -122,9 +123,6 @@ namespace PublisherClient
             Console.WriteLine("\t\tMessagesMOD [to EXIT tMessagesMOD enter 999 for \"Risk level\"]");
             Console.WriteLine("----------------------------------------------------------------------------------------------------");
         }
-
-
-
 
     }
 }

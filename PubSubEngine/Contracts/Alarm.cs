@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.Serialization;
 using System.ServiceModel;
+using SecurityManager;
 
 namespace Contracts
 {
@@ -18,17 +19,22 @@ namespace Contracts
         [DataMember]
         public string Message { get; set; }
         [DataMember]
-        public int RiskLevel { get; set; }
+        public string RiskLevel { get; set; }
+        [DataMember]
+        public string Topic { get; set; }
 
-        public Alarm(DateTime createdAt, string topic, int riskLevel)
+
+        public Alarm(DateTime createdAt, string topicEncrypt, string riskLevelEncrypt)
         {
             CreatedAt = createdAt;
-            Message = GetMessageFromTopic(topic);
-            RiskLevel = riskLevel;
+            Message = GetMessageFromTopic(topicEncrypt);
+            RiskLevel = riskLevelEncrypt;
+            Topic = topicEncrypt;
         }
 
-        private string GetMessageFromTopic(string topic)
+        private string GetMessageFromTopic(string topicEncrypt)
         {
+            string topic = AES_Symm_Algorithm.DecryptData<string>(topicEncrypt);
             return topic switch
             {
                 "Fire" => AlarmMessages.GetMessage("AlarmFire"),
@@ -39,7 +45,7 @@ namespace Contracts
         }
         public override string ToString()
         {
-            return $"[{CreatedAt}] {Message} (Risk: {RiskLevel})";
+            return $"[{CreatedAt}] {Message} (Risk: {AES_Symm_Algorithm.DecryptData<string>(RiskLevel)})";
         }
 
     }

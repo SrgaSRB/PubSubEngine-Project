@@ -6,3 +6,8 @@ C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Contracts\obj\Debug\Contracts.
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Contracts\obj\Debug\Contracts.pdb
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Contracts\obj\Debug\Contracts.AlarmMessagesRES.resources
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Contracts\obj\Debug\Contracts.csproj.GenerateResource.cache
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Contracts\bin\Debug\SecurityManager.dll
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Contracts\bin\Debug\Newtonsoft.Json.dll
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Contracts\bin\Debug\SecurityManager.pdb
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Contracts\bin\Debug\Newtonsoft.Json.xml
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Contracts\obj\Debug\Contracts.csproj.Up2Date

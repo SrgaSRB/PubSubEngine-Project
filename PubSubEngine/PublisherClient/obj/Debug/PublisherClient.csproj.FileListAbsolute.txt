@@ -13,3 +13,5 @@ C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PublisherClient\bin\Debug\Secu
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PublisherClient\bin\Debug\PubSubEngine.exe
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PublisherClient\bin\Debug\PubSubEngine.pdb
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PublisherClient\bin\Debug\PubSubEngine.exe.config
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PublisherClient\bin\Debug\Newtonsoft.Json.dll
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PublisherClient\bin\Debug\Newtonsoft.Json.xml

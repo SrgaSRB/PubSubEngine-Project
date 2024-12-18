@@ -11,3 +11,7 @@ C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SubscriberClient\obj\Debug\Sub
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SubscriberClient\bin\Debug\PubSubEngine.exe
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SubscriberClient\bin\Debug\PubSubEngine.pdb
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SubscriberClient\bin\Debug\PubSubEngine.exe.config
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SubscriberClient\bin\Debug\SecurityManager.dll
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SubscriberClient\bin\Debug\SecurityManager.pdb
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SubscriberClient\bin\Debug\Newtonsoft.Json.dll
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SubscriberClient\bin\Debug\Newtonsoft.Json.xml

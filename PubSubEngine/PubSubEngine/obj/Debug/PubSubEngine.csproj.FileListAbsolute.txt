@@ -8,3 +8,7 @@ C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PubSubEngine\obj\Debug\PubSubE
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PubSubEngine\bin\Debug\Contracts.dll
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PubSubEngine\bin\Debug\Contracts.pdb
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PubSubEngine\obj\Debug\PubSubEn.93DB00DD.Up2Date
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PubSubEngine\bin\Debug\SecurityManager.dll
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PubSubEngine\bin\Debug\SecurityManager.pdb
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PubSubEngine\bin\Debug\Newtonsoft.Json.dll
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PubSubEngine\bin\Debug\Newtonsoft.Json.xml

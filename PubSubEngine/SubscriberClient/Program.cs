@@ -7,6 +7,7 @@ using System.ServiceModel;
 using Contracts;
 using PubSubEngine;
 using System.Runtime.Remoting.Contexts;
+using SecurityManager;
 
 
 namespace SubscriberClient
@@ -27,14 +28,11 @@ namespace SubscriberClient
             try
             {
                 Console.WriteLine("Connected to server. Listening for notifications...");
-                PrintAllTopics(proxy.getAllTopics());
 
-                // Glavna petlja za unos korisnika
                 while (true)
                 {
 
                     PrintOptions();
-
                     string input = Console.ReadLine();
 
                     switch (input)
@@ -48,6 +46,7 @@ namespace SubscriberClient
                         case "2":
                             Console.Write("Enter topic name to unsubscribe: ");
                             string topicToUnsubscribe = Console.ReadLine();
+                            topicToUnsubscribe = AES_Symm_Algorithm.EncryptData(topicToUnsubscribe);
                             proxy.Unsubscribe(topicToUnsubscribe);
                             Console.WriteLine($"Unsubscribed from topic '{topicToUnsubscribe}'.");
                             break;
@@ -73,14 +72,13 @@ namespace SubscriberClient
             }
         }
 
-
         public static void PrintAllTopics(List<string> topics)
         {
             string printVal = "Topics [";
 
             foreach (string topic in topics)
             {
-                printVal += topic + ", ";
+                printVal += AES_Symm_Algorithm.DecryptData<string>(topic) + ", ";
             }
 
             if (topics.Count > 0)
@@ -89,13 +87,14 @@ namespace SubscriberClient
 
             Console.WriteLine(printVal);
         }
-
         public static void SubscribeToTopic(string topicSub, ISubscriberService proxy)
         {
             Console.Write("Minimun risk [for topic {0}]: ", topicSub);
             string minRisk = Console.ReadLine();
             Console.Write("Maximum risk [for topic {0}]: ", topicSub);
             string maxRisk = Console.ReadLine();
+
+
             try
             {
                 if (!(int.TryParse(minRisk, out int minRiskInt) && int.TryParse(maxRisk, out int maxRiskInt)))
@@ -114,9 +113,13 @@ namespace SubscriberClient
                 {
                     try
                     {
-                        if (proxy.Subscribe(topicSub, minRiskInt, maxRiskInt))
+                        minRisk = AES_Symm_Algorithm.EncryptData(minRisk);
+                        maxRisk = AES_Symm_Algorithm.EncryptData(maxRisk);
+                        topicSub = AES_Symm_Algorithm.EncryptData(topicSub);
+
+                        if (proxy.Subscribe(topicSub, minRisk, maxRisk))
                         {
-                            Console.WriteLine("Success subscribe to [{0}]", topicSub);
+                            Console.WriteLine("Success subscribe to [{0}]", AES_Symm_Algorithm.DecryptData<string>(topicSub));
                         }
                         else
                         {
@@ -136,7 +139,6 @@ namespace SubscriberClient
                 Console.WriteLine(e.Message);
             }
         }
-
         public static void PrintOptions()
         {
             Console.WriteLine("\nEnter a command: ");
