@@ -4,14 +4,14 @@ PubSubEngineCA:
 PubSubEngine:
 -Sertifikat servera za identifikaciju i šifrovanje.
 
-Publisher1:
+Publisher:
 -Sertifikat klijenta za autentifikaciju Publisher-a prema serveru.
 
-Subscriber1:
+Subscriber:
 -Sertifikat klijenta za autentifikaciju Subscriber-a prema serveru.
 
-Publisher1_sign:
+Publisher_sign:
 -Sertifikat za digitalno potpisivanje poruka od strane Publisher-a.
 
-WrongSign:
--Sertifikat za testiranje grešaka u verifikaciji digitalnih potpisa.
+//WrongSign:
+//-Sertifikat za testiranje grešaka u verifikaciji digitalnih potpisa.

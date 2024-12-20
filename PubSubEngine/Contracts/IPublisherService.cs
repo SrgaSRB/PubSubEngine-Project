@@ -15,10 +15,10 @@ namespace Contracts
         bool Publish(string topic, Alarm alarm);
 
         [OperationContract]
-        void RegisterPublisher(string topic);
+        void RegisterPublisher(string topic, byte[] sign);
 
         [OperationContract]
-        bool LogOutPublisher(string topic);
+        bool LogOutPublisher(string topic, byte[] sign);
 
     }
 }

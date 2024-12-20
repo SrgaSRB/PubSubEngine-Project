@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.ServiceModel;
+using System.ServiceModel.Channels;
 using System.Text;
 using System.Threading.Tasks;
 using Contracts;
@@ -21,8 +23,25 @@ namespace PubSubEngine
 
         public bool Publish(string topicEncrypt, Alarm alarmEncript)
         {
+
             try
             {
+                /*
+                string clienName = Formatter.ParseName(ServiceSecurityContext.Current.PrimaryIdentity.Name);
+                string clientNameSign = clienName + "_sign";
+                X509Certificate2 certificate = CertificateManager.GetCertificateFromStorage(StoreName.My, StoreLocation.LocalMachine, clientNameSign);
+
+                if (DigitalSignature.Verify(topicEncrypt, HashAlgorithm.SHA1, alarmEncript.Signature, certificate))
+                {
+                    Console.WriteLine("Publish -> Sign is valid");
+                }
+                else
+                {
+                    Console.WriteLine("Publish -> Sign is invalid");
+                    return false;
+                }
+                */
+
                 if (!alarms.ContainsKey(topicEncrypt))
                 {
                     alarms[topicEncrypt] = new List<Alarm>();
@@ -80,12 +99,33 @@ namespace PubSubEngine
             }
         }
 
-        public void RegisterPublisher(string topicEncrypt)
+        public void RegisterPublisher(string topicEncrypt, byte[] sign)
         {
-            if (!topics.Contains(topicEncrypt))
+            string clienName = Formatter.ParseName(ServiceSecurityContext.Current.PrimaryIdentity.Name);
+            string clientNameSign = clienName + "_sign";
+            X509Certificate2 certificate = CertificateManager.GetCertificateFromStorage(StoreName.My, StoreLocation.LocalMachine, clientNameSign);
+            try
             {
-                topics.Add(topicEncrypt);
-                NotifySubscribersOfNewPublisher(topicEncrypt, true);
+
+                if (DigitalSignature.Verify(topicEncrypt, HashAlgorithm.SHA1, sign, certificate))
+                {
+                    Console.WriteLine("RegisterPublisher -> Sign is valid");
+
+                    if (!topics.Contains(topicEncrypt))
+                    {
+                        topics.Add(topicEncrypt);
+                        NotifySubscribersOfNewPublisher(topicEncrypt, true);
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("RegisterPublisher -> Sign is invalid");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error in RegisterPublisher: {ex.Message}");
+                throw new FaultException("Internal server error occurred during registration.");
             }
         }
 
@@ -138,7 +178,7 @@ namespace PubSubEngine
             return topics;
         }
 
-        public bool LogOutPublisher(string topicEncrypt)
+        public bool LogOutPublisher(string topicEncrypt, byte[] sign)
         {
             try
             {
@@ -146,7 +186,7 @@ namespace PubSubEngine
                 {
                     topics.Remove(topicEncrypt);
                     NotifySubscribersOfNewPublisher(topicEncrypt, false);
-                    Console.WriteLine("The publisher who was registered on the [{0}] has successfully logged out.", AES_Symm_Algorithm.DecryptData<string>(topicEncrypt));
+                    Console.WriteLine("The publisher who was registered on the topic[{0}] has successfully logged out.", AES_Symm_Algorithm.DecryptData<string>(topicEncrypt));
                     return true;
                 }
                 Console.WriteLine("ERROR: Failed to logout publisher from topic [{0}], topic was not found!", AES_Symm_Algorithm.DecryptData<string>(topicEncrypt));

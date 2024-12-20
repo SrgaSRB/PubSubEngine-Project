@@ -1,6 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+using System.Security.Policy;
+using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 using Contracts;
@@ -15,22 +19,37 @@ namespace SubscriberClient
 
         public void ReceiveAlarm(string topicEncrypt, Alarm alarmEncrypt)
         {
-            Alarm alarm = new Alarm(alarmEncrypt.CreatedAt, alarmEncrypt.Topic, alarmEncrypt.RiskLevel);
 
-            string msg = $"Alarm received for topic '{AES_Symm_Algorithm.DecryptData<string>(topicEncrypt)}': {alarm}";
+            string clienName = "publisher";
+            string clientNameSign = clienName + "_sign";
+            X509Certificate2 certificate = CertificateManager.GetCertificateFromStorage(StoreName.My, StoreLocation.LocalMachine, clientNameSign);
 
-            string consoleMsg = "\n--------------------------------------------------Messages--------------------------------------------------\n";
-            foreach (string m in msgLog)
+            if (DigitalSignature.Verify(topicEncrypt, HashAlgorithm.SHA1, alarmEncrypt.Signature, certificate))
             {
-                consoleMsg += "|\t\t" + m + "\n";
+                Console.WriteLine("\nValid alarm received.");
+
+                string msg = $"Alarm received for topic '{AES_Symm_Algorithm.DecryptData<string>(topicEncrypt)}': {alarmEncrypt}";
+
+                string consoleMsg = "\n--------------------------------------------------Messages--------------------------------------------------\n";
+                foreach (string m in msgLog)
+                {
+                    consoleMsg += "|\t\t" + m + "\n";
+                }
+                consoleMsg += "|[Latest]\t" + msg + "\n";
+                consoleMsg += "------------------------------------------------------------------------------------------------------------";
+
+                Console.WriteLine(consoleMsg);
+                msgLog.Add(msg);
+
+                SaveAlarmToDatabase(msg);
+
+                Program.PrintOptions();
             }
-            consoleMsg += "|[Latest]\t" + msg + "\n";
-            consoleMsg += "------------------------------------------------------------------------------------------------------------";
+            else
+            {
+                Console.WriteLine("Invalid alarm received. Ignoring...");
+            }
 
-            Console.WriteLine(consoleMsg);
-
-            msgLog.Add(msg);
-            Program.PrintOptions();
         }
 
         public void NewPublisher(string topicEncrypt)
@@ -44,5 +63,12 @@ namespace SubscriberClient
             Console.WriteLine($"Publisher for topic [{AES_Symm_Algorithm.DecryptData<string>(topicEncrypt)}] logout.");
             Program.PrintOptions();
         }
+
+        private void SaveAlarmToDatabase(string msg)
+        {
+            File.AppendAllText("alarms.txt", msg + Environment.NewLine);
+            Console.WriteLine("\nAlarm saved to database.");
+        }
+
     }
 }

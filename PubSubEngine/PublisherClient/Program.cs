@@ -11,6 +11,7 @@ using SecurityManager;
 using System.Security.Cryptography.X509Certificates;
 using System.ServiceModel.Security;
 using System.Security.Principal;
+using System.ServiceModel.Channels;
 
 namespace PublisherClient
 {
@@ -40,6 +41,8 @@ namespace PublisherClient
                 factory.Credentials.ServiceCertificate.Authentication.CustomCertificateValidator = new ClientCertValidator();
                 factory.Credentials.ServiceCertificate.Authentication.RevocationMode = X509RevocationMode.NoCheck;
 
+
+
                 proxy = factory.CreateChannel();
             }
             catch (Exception e)
@@ -51,16 +54,36 @@ namespace PublisherClient
                 return; // Završava program ako veza ne uspe
             }
 
-            //proxy.RegisterPublisher("Weather");
-            //proxy.Publish("Weather", new Alarm(DateTime.Now, "It's sunny today!", 5));
-            //proxy.Publish("Weather", new Alarm(DateTime.Now, "Storm is coming!", 80));
+            string signCertCN = Formatter.ParseName(WindowsIdentity.GetCurrent().Name) + "_sign";
+            X509Certificate2 certificateSign = CertificateManager.GetCertificateFromStorage(StoreName.My, StoreLocation.LocalMachine, signCertCN);
+            if (certificateSign == null)
+            {
+                Console.WriteLine($"Error: Certificate with CN={signCertCN} not found.");
+                return;
+            }
+
+
 
             Console.Write("Enter the topic you are posting about: ");
             string topic = Console.ReadLine();
 
             try
             {
-                proxy.RegisterPublisher(AES_Symm_Algorithm.EncryptData(topic));
+                string message = AES_Symm_Algorithm.EncryptData(topic);
+                if (string.IsNullOrEmpty(message))
+                {
+                    Console.WriteLine("Error: Encryption failed or returned null/empty value.");
+                    return;
+                }
+
+                byte[] signature = DigitalSignature.Create(message, HashAlgorithm.SHA1, certificateSign);
+                if (signature == null)
+                {
+                    Console.WriteLine("Error: Signature creation failed.");
+                    return;
+                }
+
+                proxy.RegisterPublisher(message, signature);
             }
             catch (Exception e)
             {
@@ -79,7 +102,20 @@ namespace PublisherClient
                 {
                     try
                     {
-                        if (proxy.LogOutPublisher(AES_Symm_Algorithm.EncryptData(topic)))
+                        string message = AES_Symm_Algorithm.EncryptData(topic);
+                        if (string.IsNullOrEmpty(message))
+                        {
+                            Console.WriteLine("Error: Encryption failed or returned null/empty value.");
+                            return;
+                        }
+
+                        byte[] signature = DigitalSignature.Create(message, HashAlgorithm.SHA1, certificateSign);
+                        if (signature == null)
+                        {
+                            Console.WriteLine("Error: Signature creation failed.");
+                            return;
+                        }
+                        if (proxy.LogOutPublisher(message, signature))
                         {
                             Console.WriteLine("Publisher successfuly logout! Press Enter to close program...");
                             break;
@@ -120,7 +156,9 @@ namespace PublisherClient
                         }
                         try
                         {
-                            if (proxy.Publish(AES_Symm_Algorithm.EncryptData(topic), new Alarm(DateTime.Now, AES_Symm_Algorithm.EncryptData(topic), AES_Symm_Algorithm.EncryptData(riskLevel))))
+                            string message = AES_Symm_Algorithm.EncryptData(topic);
+                            byte[] signature = DigitalSignature.Create(message, HashAlgorithm.SHA1, certificateSign);
+                            if (proxy.Publish(message, new Alarm(DateTime.Now, AES_Symm_Algorithm.EncryptData(topic), AES_Symm_Algorithm.EncryptData(riskLevel) ,signature)))
                             {
                                 Console.WriteLine("Message successfuly sent to subscribers!");
                             }
