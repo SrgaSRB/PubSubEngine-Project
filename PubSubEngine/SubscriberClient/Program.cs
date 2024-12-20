@@ -8,6 +8,9 @@ using Contracts;
 using PubSubEngine;
 using System.Runtime.Remoting.Contexts;
 using SecurityManager;
+using System.Security.Cryptography.X509Certificates;
+using System.ServiceModel.Security;
+using System.Security.Principal;
 
 
 namespace SubscriberClient
@@ -19,10 +22,27 @@ namespace SubscriberClient
             var callback = new SubscriberCallback();
             var context = new InstanceContext(callback);
 
-            var binding = new NetTcpBinding();
-            var address = new EndpointAddress("net.tcp://localhost:8081/Subscriber");
+            // Binding sa sigurnosnim podešavanjima
+            var binding = new NetTcpBinding(SecurityMode.Transport);
+            binding.Security.Transport.ClientCredentialType = TcpClientCredentialType.Certificate;
 
+            // Endpoint adresa servera
+            var address = new EndpointAddress(new Uri("net.tcp://localhost:8081/Subscriber"),
+                                              new X509CertificateEndpointIdentity(CertificateManager.GetCertificateFromStorage(StoreName.TrustedPeople, StoreLocation.LocalMachine, "pubsubengine")));
+
+            // Kreiranje fabrike kanala sa Duplex komunikacijom
             var factory = new DuplexChannelFactory<ISubscriberService>(context, binding, address);
+
+            // Podešavanje sertifikata za klijenta
+            string cltCertCN = Formatter.ParseName(WindowsIdentity.GetCurrent().Name);
+            Console.WriteLine("Welcome {0}", cltCertCN);
+
+            factory.Credentials.ClientCertificate.Certificate = CertificateManager.GetCertificateFromStorage(StoreName.My, StoreLocation.LocalMachine, cltCertCN);
+            factory.Credentials.ServiceCertificate.Authentication.CertificateValidationMode = X509CertificateValidationMode.Custom;
+            factory.Credentials.ServiceCertificate.Authentication.CustomCertificateValidator = new ClientCertValidator();
+            factory.Credentials.ServiceCertificate.Authentication.RevocationMode = X509RevocationMode.NoCheck;
+
+            // Kreiranje proxy-a
             var proxy = factory.CreateChannel();
 
             try
@@ -46,8 +66,7 @@ namespace SubscriberClient
                         case "2":
                             Console.Write("Enter topic name to unsubscribe: ");
                             string topicToUnsubscribe = Console.ReadLine();
-                            topicToUnsubscribe = AES_Symm_Algorithm.EncryptData(topicToUnsubscribe);
-                            proxy.Unsubscribe(topicToUnsubscribe);
+                            proxy.Unsubscribe(AES_Symm_Algorithm.EncryptData(topicToUnsubscribe));
                             Console.WriteLine($"Unsubscribed from topic '{topicToUnsubscribe}'.");
                             break;
 

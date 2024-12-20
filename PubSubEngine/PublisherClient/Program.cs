@@ -8,6 +8,9 @@ using Contracts;
 using PublisherClient;
 using PubSubEngine;
 using SecurityManager;
+using System.Security.Cryptography.X509Certificates;
+using System.ServiceModel.Security;
+using System.Security.Principal;
 
 namespace PublisherClient
 {
@@ -15,13 +18,38 @@ namespace PublisherClient
     {
         static void Main(string[] args)
         {
-            var binding = new NetTcpBinding();
-            var address = new EndpointAddress("net.tcp://localhost:8080/Publisher");
+            IPublisherService proxy;
+            try
+            {
 
-            var factory = new ChannelFactory<IPublisherService>(binding, address);
-            var proxy = factory.CreateChannel();
+                var binding = new NetTcpBinding(SecurityMode.Transport);
+                binding.Security.Transport.ClientCredentialType = TcpClientCredentialType.Certificate;
 
-            Console.WriteLine("Publisher is connected with server");
+                var address = new EndpointAddress(
+                    new Uri("net.tcp://localhost:8080/Publisher"),
+                    new X509CertificateEndpointIdentity(
+                        CertificateManager.GetCertificateFromStorage(StoreName.TrustedPeople, StoreLocation.LocalMachine, "pubsubengine")));
+
+                var factory = new ChannelFactory<IPublisherService>(binding, address);
+
+                string cltCertCN = Formatter.ParseName(WindowsIdentity.GetCurrent().Name);
+                Console.WriteLine("Welcome {0}", cltCertCN);
+
+                factory.Credentials.ClientCertificate.Certificate = CertificateManager.GetCertificateFromStorage(StoreName.My, StoreLocation.LocalMachine, cltCertCN);
+                factory.Credentials.ServiceCertificate.Authentication.CertificateValidationMode = X509CertificateValidationMode.Custom;
+                factory.Credentials.ServiceCertificate.Authentication.CustomCertificateValidator = new ClientCertValidator();
+                factory.Credentials.ServiceCertificate.Authentication.RevocationMode = X509RevocationMode.NoCheck;
+
+                proxy = factory.CreateChannel();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error establishing connection:");
+                Console.WriteLine(e.Message);
+                Console.WriteLine("Program will now terminate.");
+                Console.ReadLine();
+                return; // Završava program ako veza ne uspe
+            }
 
             //proxy.RegisterPublisher("Weather");
             //proxy.Publish("Weather", new Alarm(DateTime.Now, "It's sunny today!", 5));
@@ -92,7 +120,7 @@ namespace PublisherClient
                         }
                         try
                         {
-                            if ( proxy.Publish(AES_Symm_Algorithm.EncryptData(topic), new Alarm(DateTime.Now, AES_Symm_Algorithm.EncryptData(topic), AES_Symm_Algorithm.EncryptData(riskLevel))))
+                            if (proxy.Publish(AES_Symm_Algorithm.EncryptData(topic), new Alarm(DateTime.Now, AES_Symm_Algorithm.EncryptData(topic), AES_Symm_Algorithm.EncryptData(riskLevel))))
                             {
                                 Console.WriteLine("Message successfuly sent to subscribers!");
                             }
