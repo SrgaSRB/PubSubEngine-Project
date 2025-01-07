@@ -51,12 +51,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AlarmMessagesRES.resx</DependentUpon>
     </Compile>
-    <Compile Include="IEventNotification.cs" />
     <Compile Include="IPublisherService.cs" />
     <Compile Include="ISubscriberCallback.cs" />
     <Compile Include="ISubscriberService.cs" />
     <Compile Include="ITopicService.cs" />
-    <Compile Include="MessageFormat.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

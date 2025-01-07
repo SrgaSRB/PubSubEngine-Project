@@ -4,3 +4,5 @@ C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Logging\obj\Debug\Logging.cspr
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Logging\obj\Debug\Logging.csproj.CoreCompileInputs.cache
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Logging\obj\Debug\Logging.dll
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Logging\obj\Debug\Logging.pdb
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Logging\obj\Debug\Logging.AuditEventFile.resources
+C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Logging\obj\Debug\Logging.csproj.GenerateResource.cache

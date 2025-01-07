@@ -7,64 +7,44 @@
       "RelativeMoniker": "D:0:0:{E692BB12-F0D0-4D2F-A741-8350DF55CEBF}|SubscriberClient\\SubscriberClient.csproj|solutionrelative:subscriberclient\\subscribercallback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9DDE5BD-CD4E-4478-AE16-30E26ED6A6C1}|PubSubEngine\\PubSubEngine.csproj|C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\pubsubengine\\pubsubengineservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9DDE5BD-CD4E-4478-AE16-30E26ED6A6C1}|PubSubEngine\\PubSubEngine.csproj|solutionrelative:pubsubengine\\pubsubengineservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67301F8B-2761-4CB3-90C2-1974E3F8C1E7}|Contracts\\Contracts.csproj|C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\contracts\\ipublisherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67301F8B-2761-4CB3-90C2-1974E3F8C1E7}|Contracts\\Contracts.csproj|solutionrelative:contracts\\ipublisherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67301F8B-2761-4CB3-90C2-1974E3F8C1E7}|Contracts\\Contracts.csproj|c:\\users\\srdjan\\pubsubengine project\\pubsubengine\\contracts\\isubscribercallback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67301F8B-2761-4CB3-90C2-1974E3F8C1E7}|Contracts\\Contracts.csproj|solutionrelative:contracts\\isubscribercallback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B74F0767-F22E-4BBB-9BAD-A35567C31694}|PublisherClient\\PublisherClient.csproj|C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\publisherclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B74F0767-F22E-4BBB-9BAD-A35567C31694}|PublisherClient\\PublisherClient.csproj|solutionrelative:publisherclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67301F8B-2761-4CB3-90C2-1974E3F8C1E7}|Contracts\\Contracts.csproj|C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\contracts\\alarm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67301F8B-2761-4CB3-90C2-1974E3F8C1E7}|Contracts\\Contracts.csproj|solutionrelative:contracts\\alarm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E692BB12-F0D0-4D2F-A741-8350DF55CEBF}|SubscriberClient\\SubscriberClient.csproj|C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\subscriberclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E692BB12-F0D0-4D2F-A741-8350DF55CEBF}|SubscriberClient\\SubscriberClient.csproj|solutionrelative:subscriberclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9DDE5BD-CD4E-4478-AE16-30E26ED6A6C1}|PubSubEngine\\PubSubEngine.csproj|C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\pubsubengine\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9DDE5BD-CD4E-4478-AE16-30E26ED6A6C1}|PubSubEngine\\PubSubEngine.csproj|solutionrelative:pubsubengine\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{60FF7B38-B050-4CB3-A247-4F03D1ED22D2}|SecurityManager\\SecurityManager.csproj|C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\securitymanager\\formatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60FF7B38-B050-4CB3-A247-4F03D1ED22D2}|SecurityManager\\SecurityManager.csproj|solutionrelative:securitymanager\\formatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9DDE5BD-CD4E-4478-AE16-30E26ED6A6C1}|PubSubEngine\\PubSubEngine.csproj|c:\\users\\srdjan\\pubsubengine project\\pubsubengine\\pubsubengine\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{F9DDE5BD-CD4E-4478-AE16-30E26ED6A6C1}|PubSubEngine\\PubSubEngine.csproj|solutionrelative:pubsubengine\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{60FF7B38-B050-4CB3-A247-4F03D1ED22D2}|SecurityManager\\SecurityManager.csproj|c:\\users\\srdjan\\pubsubengine project\\pubsubengine\\securitymanager\\digitalsignature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{60FF7B38-B050-4CB3-A247-4F03D1ED22D2}|SecurityManager\\SecurityManager.csproj|C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\securitymanager\\digitalsignature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{60FF7B38-B050-4CB3-A247-4F03D1ED22D2}|SecurityManager\\SecurityManager.csproj|solutionrelative:securitymanager\\digitalsignature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B74F0767-F22E-4BBB-9BAD-A35567C31694}|PublisherClient\\PublisherClient.csproj|C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\publisherclient\\messagepublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B74F0767-F22E-4BBB-9BAD-A35567C31694}|PublisherClient\\PublisherClient.csproj|solutionrelative:publisherclient\\messagepublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{60FF7B38-B050-4CB3-A247-4F03D1ED22D2}|SecurityManager\\SecurityManager.csproj|C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\securitymanager\\certificatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60FF7B38-B050-4CB3-A247-4F03D1ED22D2}|SecurityManager\\SecurityManager.csproj|solutionrelative:securitymanager\\certificatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{60FF7B38-B050-4CB3-A247-4F03D1ED22D2}|SecurityManager\\SecurityManager.csproj|C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\securitymanager\\aes_symm_algorithm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60FF7B38-B050-4CB3-A247-4F03D1ED22D2}|SecurityManager\\SecurityManager.csproj|solutionrelative:securitymanager\\aes_symm_algorithm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{60FF7B38-B050-4CB3-A247-4F03D1ED22D2}|SecurityManager\\SecurityManager.csproj|C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\securitymanager\\clientcertvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60FF7B38-B050-4CB3-A247-4F03D1ED22D2}|SecurityManager\\SecurityManager.csproj|solutionrelative:securitymanager\\clientcertvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{60FF7B38-B050-4CB3-A247-4F03D1ED22D2}|SecurityManager\\SecurityManager.csproj|C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\securitymanager\\customvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{60FF7B38-B050-4CB3-A247-4F03D1ED22D2}|SecurityManager\\SecurityManager.csproj|solutionrelative:securitymanager\\customvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{60FF7B38-B050-4CB3-A247-4F03D1ED22D2}|SecurityManager\\SecurityManager.csproj|C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\securitymanager\\servicecertvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60FF7B38-B050-4CB3-A247-4F03D1ED22D2}|SecurityManager\\SecurityManager.csproj|solutionrelative:securitymanager\\servicecertvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{60FF7B38-B050-4CB3-A247-4F03D1ED22D2}|SecurityManager\\SecurityManager.csproj|C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\securitymanager\\clientcertvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60FF7B38-B050-4CB3-A247-4F03D1ED22D2}|SecurityManager\\SecurityManager.csproj|solutionrelative:securitymanager\\clientcertvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60FF7B38-B050-4CB3-A247-4F03D1ED22D2}|SecurityManager\\SecurityManager.csproj|C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\securitymanager\\certificatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60FF7B38-B050-4CB3-A247-4F03D1ED22D2}|SecurityManager\\SecurityManager.csproj|solutionrelative:securitymanager\\certificatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9DDE5BD-CD4E-4478-AE16-30E26ED6A6C1}|PubSubEngine\\PubSubEngine.csproj|C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\pubsubengine\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9DDE5BD-CD4E-4478-AE16-30E26ED6A6C1}|PubSubEngine\\PubSubEngine.csproj|solutionrelative:pubsubengine\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9DDE5BD-CD4E-4478-AE16-30E26ED6A6C1}|PubSubEngine\\PubSubEngine.csproj|C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\pubsubengine\\pubsubengineservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9DDE5BD-CD4E-4478-AE16-30E26ED6A6C1}|PubSubEngine\\PubSubEngine.csproj|solutionrelative:pubsubengine\\pubsubengineservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B74F0767-F22E-4BBB-9BAD-A35567C31694}|PublisherClient\\PublisherClient.csproj|C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\publisherclient\\messagepublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B74F0767-F22E-4BBB-9BAD-A35567C31694}|PublisherClient\\PublisherClient.csproj|solutionrelative:publisherclient\\messagepublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B74F0767-F22E-4BBB-9BAD-A35567C31694}|PublisherClient\\PublisherClient.csproj|C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\publisherclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B74F0767-F22E-4BBB-9BAD-A35567C31694}|PublisherClient\\PublisherClient.csproj|solutionrelative:publisherclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{67301F8B-2761-4CB3-90C2-1974E3F8C1E7}|Contracts\\Contracts.csproj|C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\contracts\\itopicservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -75,48 +55,48 @@
       "RelativeMoniker": "D:0:0:{67301F8B-2761-4CB3-90C2-1974E3F8C1E7}|Contracts\\Contracts.csproj|solutionrelative:contracts\\isubscriberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67301F8B-2761-4CB3-90C2-1974E3F8C1E7}|Contracts\\Contracts.csproj|C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\contracts\\ieventnotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67301F8B-2761-4CB3-90C2-1974E3F8C1E7}|Contracts\\Contracts.csproj|solutionrelative:contracts\\ieventnotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{67301F8B-2761-4CB3-90C2-1974E3F8C1E7}|Contracts\\Contracts.csproj|C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\contracts\\isubscribercallback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67301F8B-2761-4CB3-90C2-1974E3F8C1E7}|Contracts\\Contracts.csproj|solutionrelative:contracts\\isubscribercallback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67301F8B-2761-4CB3-90C2-1974E3F8C1E7}|Contracts\\Contracts.csproj|C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\contracts\\ipublisherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67301F8B-2761-4CB3-90C2-1974E3F8C1E7}|Contracts\\Contracts.csproj|solutionrelative:contracts\\ipublisherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{67301F8B-2761-4CB3-90C2-1974E3F8C1E7}|Contracts\\Contracts.csproj|C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\contracts\\alarmmessages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67301F8B-2761-4CB3-90C2-1974E3F8C1E7}|Contracts\\Contracts.csproj|solutionrelative:contracts\\alarmmessages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{60FF7B38-B050-4CB3-A247-4F03D1ED22D2}|SecurityManager\\SecurityManager.csproj|C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\securitymanager\\securityexceptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60FF7B38-B050-4CB3-A247-4F03D1ED22D2}|SecurityManager\\SecurityManager.csproj|solutionrelative:securitymanager\\securityexceptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A63E306A-7A22-4B1D-8D06-C7FFA8F10A51}|Logging\\Logging.csproj|c:\\users\\srdjan\\pubsubengine project\\pubsubengine\\logging\\audit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A63E306A-7A22-4B1D-8D06-C7FFA8F10A51}|Logging\\Logging.csproj|solutionrelative:logging\\audit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{60FF7B38-B050-4CB3-A247-4F03D1ED22D2}|SecurityManager\\SecurityManager.csproj|C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\securitymanager\\formatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60FF7B38-B050-4CB3-A247-4F03D1ED22D2}|SecurityManager\\SecurityManager.csproj|solutionrelative:securitymanager\\formatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A63E306A-7A22-4B1D-8D06-C7FFA8F10A51}|Logging\\Logging.csproj|C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\logging\\auditevents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A63E306A-7A22-4B1D-8D06-C7FFA8F10A51}|Logging\\Logging.csproj|solutionrelative:logging\\auditevents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67301F8B-2761-4CB3-90C2-1974E3F8C1E7}|Contracts\\Contracts.csproj|C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\contracts\\alarm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67301F8B-2761-4CB3-90C2-1974E3F8C1E7}|Contracts\\Contracts.csproj|solutionrelative:contracts\\alarm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60FF7B38-B050-4CB3-A247-4F03D1ED22D2}|SecurityManager\\SecurityManager.csproj|C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\securitymanager\\servicecertvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60FF7B38-B050-4CB3-A247-4F03D1ED22D2}|SecurityManager\\SecurityManager.csproj|solutionrelative:securitymanager\\servicecertvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60FF7B38-B050-4CB3-A247-4F03D1ED22D2}|SecurityManager\\SecurityManager.csproj|C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\securitymanager\\aes_symm_algorithm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60FF7B38-B050-4CB3-A247-4F03D1ED22D2}|SecurityManager\\SecurityManager.csproj|solutionrelative:securitymanager\\aes_symm_algorithm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9DDE5BD-CD4E-4478-AE16-30E26ED6A6C1}|PubSubEngine\\PubSubEngine.csproj|C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\pubsubengine\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F9DDE5BD-CD4E-4478-AE16-30E26ED6A6C1}|PubSubEngine\\PubSubEngine.csproj|solutionrelative:pubsubengine\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B74F0767-F22E-4BBB-9BAD-A35567C31694}|PublisherClient\\PublisherClient.csproj|C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\publisherclient\\publisherclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B74F0767-F22E-4BBB-9BAD-A35567C31694}|PublisherClient\\PublisherClient.csproj|solutionrelative:publisherclient\\publisherclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E692BB12-F0D0-4D2F-A741-8350DF55CEBF}|SubscriberClient\\SubscriberClient.csproj|C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\subscriberclient\\messagehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E692BB12-F0D0-4D2F-A741-8350DF55CEBF}|SubscriberClient\\SubscriberClient.csproj|solutionrelative:subscriberclient\\messagehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{67301F8B-2761-4CB3-90C2-1974E3F8C1E7}|Contracts\\Contracts.csproj|C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\contracts\\alarmmessagesres.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67301F8B-2761-4CB3-90C2-1974E3F8C1E7}|Contracts\\Contracts.csproj|solutionrelative:contracts\\alarmmessagesres.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A63E306A-7A22-4B1D-8D06-C7FFA8F10A51}|Logging\\Logging.csproj|C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\logging\\auditmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A63E306A-7A22-4B1D-8D06-C7FFA8F10A51}|Logging\\Logging.csproj|solutionrelative:logging\\auditmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90AD9F83-6DAF-4969-BA82-DBC84DE4983A}|Data\\Data.csproj|C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\data\\subscriptiondatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90AD9F83-6DAF-4969-BA82-DBC84DE4983A}|Data\\Data.csproj|solutionrelative:data\\subscriptiondatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90AD9F83-6DAF-4969-BA82-DBC84DE4983A}|Data\\Data.csproj|C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\data\\messagedatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90AD9F83-6DAF-4969-BA82-DBC84DE4983A}|Data\\Data.csproj|solutionrelative:data\\messagedatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9DDE5BD-CD4E-4478-AE16-30E26ED6A6C1}|PubSubEngine\\PubSubEngine.csproj|C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\pubsubengine\\topicmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9DDE5BD-CD4E-4478-AE16-30E26ED6A6C1}|PubSubEngine\\PubSubEngine.csproj|solutionrelative:pubsubengine\\topicmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -126,17 +106,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\PublisherClient\\Program.cs",
               "RelativeDocumentMoniker": "PublisherClient\\Program.cs",
               "ToolTip": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\PublisherClient\\Program.cs",
               "RelativeToolTip": "PublisherClient\\Program.cs",
-              "ViewState": "AgIAAIsAAAAAAAAAAAAiwKAAAABBAAAAAAAAAA==",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAkwJ0AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-15T21:31:37.208Z",
               "IsPinned": true,
@@ -158,16 +138,82 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\SubscriberClient\\Program.cs",
               "RelativeDocumentMoniker": "SubscriberClient\\Program.cs",
               "ToolTip": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\SubscriberClient\\Program.cs",
               "RelativeToolTip": "SubscriberClient\\Program.cs",
-              "ViewState": "AgIAAHAAAAAAAAAAAAAhwIUAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAawIoAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-15T21:31:42.061Z",
               "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PubSubEngineService.cs",
+              "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\PubSubEngine\\PubSubEngineService.cs",
+              "RelativeDocumentMoniker": "PubSubEngine\\PubSubEngineService.cs",
+              "ToolTip": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\PubSubEngine\\PubSubEngineService.cs",
+              "RelativeToolTip": "PubSubEngine\\PubSubEngineService.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAuwGQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T21:53:05.745Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ClientCertValidator.cs",
+              "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\SecurityManager\\ClientCertValidator.cs",
+              "RelativeDocumentMoniker": "SecurityManager\\ClientCertValidator.cs",
+              "ToolTip": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\SecurityManager\\ClientCertValidator.cs",
+              "RelativeToolTip": "SecurityManager\\ClientCertValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T21:06:47.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CustomValidator.cs",
+              "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\SecurityManager\\CustomValidator.cs",
+              "RelativeDocumentMoniker": "SecurityManager\\CustomValidator.cs",
+              "ToolTip": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\SecurityManager\\CustomValidator.cs",
+              "RelativeToolTip": "SecurityManager\\CustomValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T14:25:37.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DigitalSignature.cs",
+              "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\SecurityManager\\DigitalSignature.cs",
+              "RelativeDocumentMoniker": "SecurityManager\\DigitalSignature.cs",
+              "ToolTip": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\SecurityManager\\DigitalSignature.cs",
+              "RelativeToolTip": "SecurityManager\\DigitalSignature.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAEwDIAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T14:25:41.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Formatter.cs",
+              "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\SecurityManager\\Formatter.cs",
+              "RelativeDocumentMoniker": "SecurityManager\\Formatter.cs",
+              "ToolTip": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\SecurityManager\\Formatter.cs",
+              "RelativeToolTip": "SecurityManager\\Formatter.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAACwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T20:23:32.002Z",
               "EditorCaption": ""
             },
             {
@@ -178,193 +224,40 @@
               "RelativeDocumentMoniker": "SubscriberClient\\SubscriberCallback.cs",
               "ToolTip": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\SubscriberClient\\SubscriberCallback.cs",
               "RelativeToolTip": "SubscriberClient\\SubscriberCallback.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwE8AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-15T22:35:31.759Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PubSubEngineService.cs",
-              "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\PubSubEngine\\PubSubEngineService.cs",
-              "RelativeDocumentMoniker": "PubSubEngine\\PubSubEngineService.cs",
-              "ToolTip": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\PubSubEngine\\PubSubEngineService.cs",
-              "RelativeToolTip": "PubSubEngine\\PubSubEngineService.cs",
-              "ViewState": "AgIAAIMAAAAAAAAAAAAgwIsAAAAvAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "CertificateManager.cs",
+              "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\SecurityManager\\CertificateManager.cs",
+              "RelativeDocumentMoniker": "SecurityManager\\CertificateManager.cs",
+              "ToolTip": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\SecurityManager\\CertificateManager.cs",
+              "RelativeToolTip": "SecurityManager\\CertificateManager.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAYwDkAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T21:53:05.745Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IPublisherService.cs",
-              "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\Contracts\\IPublisherService.cs",
-              "RelativeDocumentMoniker": "Contracts\\IPublisherService.cs",
-              "ToolTip": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\Contracts\\IPublisherService.cs",
-              "RelativeToolTip": "Contracts\\IPublisherService.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAEwBcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T21:52:54.695Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ISubscriberCallback.cs",
-              "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\Contracts\\ISubscriberCallback.cs",
-              "RelativeDocumentMoniker": "Contracts\\ISubscriberCallback.cs",
-              "ToolTip": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\Contracts\\ISubscriberCallback.cs",
-              "RelativeToolTip": "Contracts\\ISubscriberCallback.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T22:06:54.557Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Alarm.cs",
-              "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\Contracts\\Alarm.cs",
-              "RelativeDocumentMoniker": "Contracts\\Alarm.cs",
-              "ToolTip": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\Contracts\\Alarm.cs",
-              "RelativeToolTip": "Contracts\\Alarm.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAqwCIAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T19:42:11.052Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\PubSubEngine\\App.config",
-              "RelativeDocumentMoniker": "PubSubEngine\\App.config",
-              "ToolTip": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\PubSubEngine\\App.config",
-              "RelativeToolTip": "PubSubEngine\\App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-12-20T20:42:30.016Z",
+              "WhenOpened": "2024-12-17T14:25:38.368Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "DigitalSignature.cs",
-              "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\SecurityManager\\DigitalSignature.cs",
-              "RelativeDocumentMoniker": "SecurityManager\\DigitalSignature.cs",
-              "ToolTip": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\SecurityManager\\DigitalSignature.cs",
-              "RelativeToolTip": "SecurityManager\\DigitalSignature.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T14:25:41.375Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "MessagePublisher.cs",
               "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\PublisherClient\\MessagePublisher.cs",
               "RelativeDocumentMoniker": "PublisherClient\\MessagePublisher.cs",
               "ToolTip": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\PublisherClient\\MessagePublisher.cs",
               "RelativeToolTip": "PublisherClient\\MessagePublisher.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-16T19:38:59.722Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ClientCertValidator.cs",
-              "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\SecurityManager\\ClientCertValidator.cs",
-              "RelativeDocumentMoniker": "SecurityManager\\ClientCertValidator.cs",
-              "ToolTip": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\SecurityManager\\ClientCertValidator.cs",
-              "RelativeToolTip": "SecurityManager\\ClientCertValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T21:06:47.366Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "CustomValidator.cs",
-              "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\SecurityManager\\CustomValidator.cs",
-              "RelativeDocumentMoniker": "SecurityManager\\CustomValidator.cs",
-              "ToolTip": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\SecurityManager\\CustomValidator.cs",
-              "RelativeToolTip": "SecurityManager\\CustomValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T14:25:37.314Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AES_Symm_Algorithm.cs",
-              "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\SecurityManager\\AES_Symm_Algorithm.cs",
-              "RelativeDocumentMoniker": "SecurityManager\\AES_Symm_Algorithm.cs",
-              "ToolTip": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\SecurityManager\\AES_Symm_Algorithm.cs",
-              "RelativeToolTip": "SecurityManager\\AES_Symm_Algorithm.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAAwEYAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T14:25:19.279Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "CertificateManager.cs",
-              "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\SecurityManager\\CertificateManager.cs",
-              "RelativeDocumentMoniker": "SecurityManager\\CertificateManager.cs",
-              "ToolTip": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\SecurityManager\\CertificateManager.cs",
-              "RelativeToolTip": "SecurityManager\\CertificateManager.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAYwDsAAABpAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T14:25:38.368Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ServiceCertValidator.cs",
-              "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\SecurityManager\\ServiceCertValidator.cs",
-              "RelativeDocumentMoniker": "SecurityManager\\ServiceCertValidator.cs",
-              "ToolTip": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\SecurityManager\\ServiceCertValidator.cs",
-              "RelativeToolTip": "SecurityManager\\ServiceCertValidator.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAADgvyAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T20:21:35.76Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ISubscriberService.cs",
-              "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\Contracts\\ISubscriberService.cs",
-              "RelativeDocumentMoniker": "Contracts\\ISubscriberService.cs",
-              "ToolTip": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\Contracts\\ISubscriberService.cs",
-              "RelativeToolTip": "Contracts\\ISubscriberService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T22:23:54.167Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "IEventNotification.cs",
-              "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\Contracts\\IEventNotification.cs",
-              "RelativeDocumentMoniker": "Contracts\\IEventNotification.cs",
-              "ToolTip": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\Contracts\\IEventNotification.cs",
-              "RelativeToolTip": "Contracts\\IEventNotification.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T12:46:23.57Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
               "Title": "ITopicService.cs",
               "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\Contracts\\ITopicService.cs",
               "RelativeDocumentMoniker": "Contracts\\ITopicService.cs",
@@ -372,23 +265,51 @@
               "RelativeToolTip": "Contracts\\ITopicService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T22:21:33.554Z"
+              "WhenOpened": "2024-12-15T22:21:33.554Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "SecurityExceptions.cs",
-              "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\SecurityManager\\SecurityExceptions.cs",
-              "RelativeDocumentMoniker": "SecurityManager\\SecurityExceptions.cs",
-              "ToolTip": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\SecurityManager\\SecurityExceptions.cs",
-              "RelativeToolTip": "SecurityManager\\SecurityExceptions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "ISubscriberService.cs",
+              "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\Contracts\\ISubscriberService.cs",
+              "RelativeDocumentMoniker": "Contracts\\ISubscriberService.cs",
+              "ToolTip": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\Contracts\\ISubscriberService.cs",
+              "RelativeToolTip": "Contracts\\ISubscriberService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T14:25:45.053Z"
+              "WhenOpened": "2024-12-15T22:23:54.167Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 13,
+              "Title": "ISubscriberCallback.cs",
+              "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\Contracts\\ISubscriberCallback.cs",
+              "RelativeDocumentMoniker": "Contracts\\ISubscriberCallback.cs",
+              "ToolTip": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\Contracts\\ISubscriberCallback.cs",
+              "RelativeToolTip": "Contracts\\ISubscriberCallback.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T22:06:54.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IPublisherService.cs",
+              "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\Contracts\\IPublisherService.cs",
+              "RelativeDocumentMoniker": "Contracts\\IPublisherService.cs",
+              "ToolTip": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\Contracts\\IPublisherService.cs",
+              "RelativeToolTip": "Contracts\\IPublisherService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T21:52:54.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "AlarmMessages.cs",
               "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\Contracts\\AlarmMessages.cs",
               "RelativeDocumentMoniker": "Contracts\\AlarmMessages.cs",
@@ -396,31 +317,86 @@
               "RelativeToolTip": "Contracts\\AlarmMessages.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T19:42:12.027Z"
+              "WhenOpened": "2024-12-16T19:42:12.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Audit.cs",
+              "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\Logging\\Audit.cs",
+              "RelativeDocumentMoniker": "Logging\\Audit.cs",
+              "ToolTip": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\Logging\\Audit.cs",
+              "RelativeToolTip": "Logging\\Audit.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T14:25:10.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AuditEvents.cs",
+              "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\Logging\\AuditEvents.cs",
+              "RelativeDocumentMoniker": "Logging\\AuditEvents.cs",
+              "ToolTip": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\Logging\\AuditEvents.cs",
+              "RelativeToolTip": "Logging\\AuditEvents.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T02:35:49.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Alarm.cs",
+              "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\Contracts\\Alarm.cs",
+              "RelativeDocumentMoniker": "Contracts\\Alarm.cs",
+              "ToolTip": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\Contracts\\Alarm.cs",
+              "RelativeToolTip": "Contracts\\Alarm.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAqwCAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T19:42:11.052Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ServiceCertValidator.cs",
+              "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\SecurityManager\\ServiceCertValidator.cs",
+              "RelativeDocumentMoniker": "SecurityManager\\ServiceCertValidator.cs",
+              "ToolTip": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\SecurityManager\\ServiceCertValidator.cs",
+              "RelativeToolTip": "SecurityManager\\ServiceCertValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T20:21:35.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AES_Symm_Algorithm.cs",
+              "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\SecurityManager\\AES_Symm_Algorithm.cs",
+              "RelativeDocumentMoniker": "SecurityManager\\AES_Symm_Algorithm.cs",
+              "ToolTip": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\SecurityManager\\AES_Symm_Algorithm.cs",
+              "RelativeToolTip": "SecurityManager\\AES_Symm_Algorithm.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAwBgAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T14:25:19.279Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
-              "Title": "Formatter.cs",
-              "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\SecurityManager\\Formatter.cs",
-              "RelativeDocumentMoniker": "SecurityManager\\Formatter.cs",
-              "ToolTip": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\SecurityManager\\Formatter.cs",
-              "RelativeToolTip": "SecurityManager\\Formatter.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAACwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T20:23:32.002Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "MessageHandler.cs",
-              "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\SubscriberClient\\MessageHandler.cs",
-              "RelativeDocumentMoniker": "SubscriberClient\\MessageHandler.cs",
-              "ToolTip": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\SubscriberClient\\MessageHandler.cs",
-              "RelativeToolTip": "SubscriberClient\\MessageHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T22:35:29.294Z"
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\PubSubEngine\\App.config",
+              "RelativeDocumentMoniker": "PubSubEngine\\App.config",
+              "ToolTip": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\PubSubEngine\\App.config",
+              "RelativeToolTip": "PubSubEngine\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-12-20T20:42:30.016Z"
             },
             {
               "$type": "Document",
@@ -436,7 +412,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 23,
               "Title": "AlarmMessagesRES.Designer.cs",
               "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\Contracts\\AlarmMessagesRES.Designer.cs",
               "RelativeDocumentMoniker": "Contracts\\AlarmMessagesRES.Designer.cs",
@@ -445,54 +421,6 @@
               "ViewState": "AgIAADsAAAAAAAAAAAAgwEUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-16T19:41:33.719Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "AuditManager.cs",
-              "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\Logging\\AuditManager.cs",
-              "RelativeDocumentMoniker": "Logging\\AuditManager.cs",
-              "ToolTip": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\Logging\\AuditManager.cs",
-              "RelativeToolTip": "Logging\\AuditManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T14:25:10.993Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "SubscriptionDatabase.cs",
-              "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\Data\\SubscriptionDatabase.cs",
-              "RelativeDocumentMoniker": "Data\\SubscriptionDatabase.cs",
-              "ToolTip": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\Data\\SubscriptionDatabase.cs",
-              "RelativeToolTip": "Data\\SubscriptionDatabase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T19:39:05.273Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "MessageDatabase.cs",
-              "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\Data\\MessageDatabase.cs",
-              "RelativeDocumentMoniker": "Data\\MessageDatabase.cs",
-              "ToolTip": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\Data\\MessageDatabase.cs",
-              "RelativeToolTip": "Data\\MessageDatabase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T19:39:03.35Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "TopicManager.cs",
-              "DocumentMoniker": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\PubSubEngine\\TopicManager.cs",
-              "RelativeDocumentMoniker": "PubSubEngine\\TopicManager.cs",
-              "ToolTip": "C:\\Users\\SRDJAN\\PubSubEngine Project\\PubSubEngine\\PubSubEngine\\TopicManager.cs",
-              "RelativeToolTip": "PubSubEngine\\TopicManager.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T22:28:49.223Z"
             }
           ]
         }

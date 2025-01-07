@@ -17,8 +17,8 @@ namespace PubSubEngine
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]
     public class PubSubEngineService : IPublisherService, ISubscriberService, ITopicService
     {
-        private static readonly Dictionary<string, List<ISubscriberCallback>> topicSubscribers = new();
-        private static readonly List<string> topics = new List<string>();
+        private static readonly Dictionary<string, List<(ISubscriberCallback callback, int minRisk, int maxRisk)>> topicSubscribers = new();
+        private static readonly List<string> topics = new();
         private static readonly Dictionary<string, List<Alarm>> alarms = new();
 
         public bool Publish(string topicEncrypt, Alarm alarmEncript)
@@ -29,7 +29,7 @@ namespace PubSubEngine
                 /*
                 string clienName = Formatter.ParseName(ServiceSecurityContext.Current.PrimaryIdentity.Name);
                 string clientNameSign = clienName + "_sign";
-                X509Certificate2 certificate = CertificateManager.GetCertificateFromStorage(StoreName.My, StoreLocation.LocalMachine, clientNameSign);
+                X509Certificate2 certificate = CertificateManager.GetCertificateFromStorage(StoreName.ThrustedPeople, StoreLocation.LocalMachine, clientNameSign);
 
                 if (DigitalSignature.Verify(topicEncrypt, HashAlgorithm.SHA1, alarmEncript.Signature, certificate))
                 {
@@ -66,17 +66,20 @@ namespace PubSubEngine
             {
                 var callback = OperationContext.Current.GetCallbackChannel<ISubscriberCallback>();
 
+                int minRisk = int.Parse(AES_Symm_Algorithm.DecryptData<string>(minRiskEncrypt));
+                int maxRisk = int.Parse(AES_Symm_Algorithm.DecryptData<string>(maxRiskEncrypt));
+
                 if (!topicSubscribers.ContainsKey(topicEncrypt))
                 {
-                    topicSubscribers[topicEncrypt] = new List<ISubscriberCallback>();
+                    topicSubscribers[topicEncrypt] = new List<(ISubscriberCallback, int, int)>();
                 }
 
-                if (!topicSubscribers[topicEncrypt].Contains(callback))
+                if (!topicSubscribers[topicEncrypt].Any(sub => sub.callback == callback))
                 {
-                    topicSubscribers[topicEncrypt].Add(callback);
+                    topicSubscribers[topicEncrypt].Add((callback, minRisk, maxRisk));
                 }
 
-                Console.WriteLine($"Subscriber subscribed to topic '{AES_Symm_Algorithm.DecryptData<string>(topicEncrypt)}' with risk range {AES_Symm_Algorithm.DecryptData<string>(minRiskEncrypt)}-{AES_Symm_Algorithm.DecryptData<string>(maxRiskEncrypt)}.");
+                Console.WriteLine($"Subscriber subscribed to topic '{AES_Symm_Algorithm.DecryptData<string>(topicEncrypt)}' with risk range {minRisk}-{maxRisk}.");
                 return true;
             }
             catch (Exception e)
@@ -93,17 +96,27 @@ namespace PubSubEngine
 
             if (topicSubscribers.ContainsKey(topicEncrypt))
             {
-                topicSubscribers[topicEncrypt].Remove(callback);
+                var subscriberToRemove = topicSubscribers[topicEncrypt]
+                    .FirstOrDefault(subscriber => subscriber.callback == callback);
 
-                Console.WriteLine($"Subscriber unsubscribed from topic '{AES_Symm_Algorithm.DecryptData<string>(topicEncrypt)}'.");
+                if (subscriberToRemove != default)
+                {
+                    topicSubscribers[topicEncrypt].Remove(subscriberToRemove);
+                    Console.WriteLine($"Subscriber unsubscribed from topic '{AES_Symm_Algorithm.DecryptData<string>(topicEncrypt)}'.");
+                }
+                else
+                {
+                    Console.WriteLine($"Subscriber not found for topic '{AES_Symm_Algorithm.DecryptData<string>(topicEncrypt)}'.");
+                }
             }
         }
+
 
         public void RegisterPublisher(string topicEncrypt, byte[] sign)
         {
             string clienName = Formatter.ParseName(ServiceSecurityContext.Current.PrimaryIdentity.Name);
             string clientNameSign = clienName + "_sign";
-            X509Certificate2 certificate = CertificateManager.GetCertificateFromStorage(StoreName.My, StoreLocation.LocalMachine, clientNameSign);
+            X509Certificate2 certificate = CertificateManager.GetCertificateFromStorage(StoreName.TrustedPeople, StoreLocation.LocalMachine, clientNameSign);
             try
             {
 
@@ -133,11 +146,15 @@ namespace PubSubEngine
         {
             if (topicSubscribers.ContainsKey(topicEncrypt))
             {
-                foreach (var subscriber in topicSubscribers[topicEncrypt])
+                foreach (var (callback, minRisk, maxRisk) in topicSubscribers[topicEncrypt])
                 {
                     try
                     {
-                        subscriber.ReceiveAlarm(topicEncrypt, alarmEncript);
+                        int alarmRisk = int.Parse(AES_Symm_Algorithm.DecryptData<string>(alarmEncript.RiskLevel));
+                        if (alarmRisk >= minRisk && alarmRisk <= maxRisk)
+                        {
+                            callback.ReceiveAlarm(topicEncrypt, alarmEncript);
+                        }
                     }
                     catch (Exception e)
                     {
@@ -152,26 +169,28 @@ namespace PubSubEngine
         {
             foreach (var subscriberList in topicSubscribers.Values)
             {
-                foreach (var subscriber in subscriberList)
+                foreach (var (callback, _, _) in subscriberList) 
                 {
                     try
                     {
                         if (notifyType)
                         {
-                            subscriber.NewPublisher(topicEncrypt);
+                            callback.NewPublisher(topicEncrypt);
                         }
                         else
                         {
-                            subscriber.LogOutPublisher(topicEncrypt);
+                            callback.LogOutPublisher(topicEncrypt);
                         }
                     }
-                    catch
+                    catch (Exception e)
                     {
                         Console.WriteLine($"Error notifying subscriber about new publisher for topic '{AES_Symm_Algorithm.DecryptData<string>(topicEncrypt)}'.");
+                        Console.WriteLine(e.Message);
                     }
                 }
             }
         }
+
 
         public List<string> getAllTopics()
         {

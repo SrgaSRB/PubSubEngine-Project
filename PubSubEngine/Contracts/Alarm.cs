@@ -24,10 +24,13 @@ namespace Contracts
         public string Topic { get; set; }
         [DataMember]
         public byte[] Signature { get; set; }
+        [DataMember]
+        public Guid Id { get; set; }
 
 
         public Alarm(DateTime createdAt, string topicEncrypt, string riskLevelEncrypt, byte[] signature)
         {
+            Id = Guid.NewGuid();
             CreatedAt = createdAt;
             Message = GetMessageFromTopic(topicEncrypt);
             RiskLevel = riskLevelEncrypt;

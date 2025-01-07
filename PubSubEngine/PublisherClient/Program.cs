@@ -41,8 +41,6 @@ namespace PublisherClient
                 factory.Credentials.ServiceCertificate.Authentication.CustomCertificateValidator = new ClientCertValidator();
                 factory.Credentials.ServiceCertificate.Authentication.RevocationMode = X509RevocationMode.NoCheck;
 
-
-
                 proxy = factory.CreateChannel();
             }
             catch (Exception e)
@@ -61,8 +59,6 @@ namespace PublisherClient
                 Console.WriteLine($"Error: Certificate with CN={signCertCN} not found.");
                 return;
             }
-
-
 
             Console.Write("Enter the topic you are posting about: ");
             string topic = Console.ReadLine();
@@ -158,7 +154,7 @@ namespace PublisherClient
                         {
                             string message = AES_Symm_Algorithm.EncryptData(topic);
                             byte[] signature = DigitalSignature.Create(message, HashAlgorithm.SHA1, certificateSign);
-                            if (proxy.Publish(message, new Alarm(DateTime.Now, AES_Symm_Algorithm.EncryptData(topic), AES_Symm_Algorithm.EncryptData(riskLevel) ,signature)))
+                            if (proxy.Publish(message, new Alarm(DateTime.Now, message, AES_Symm_Algorithm.EncryptData(riskLevel) ,signature)))
                             {
                                 Console.WriteLine("Message successfuly sent to subscribers!");
                             }

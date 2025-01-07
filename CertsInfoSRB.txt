@@ -1,17 +1,21 @@
 PubSubEngineCA:
 -Sertifikaciono telo koje izdaje sve ostale sertifikate.
 
-PubSubEngine:
--Sertifikat servera za identifikaciju i šifrovanje.
+pubsubengine:
+-Sertifikat servera za identifikaciju i šifrovanje. 
+->Personal, ThrustedPeople
 
-Publisher:
--Sertifikat klijenta za autentifikaciju Publisher-a prema serveru.
+publisher:
+-Sertifikat klijenta za autentifikaciju Publisher-a prema serveru. 
+->Personal
 
-Subscriber:
+subscriber:
 -Sertifikat klijenta za autentifikaciju Subscriber-a prema serveru.
+->Personal
 
-Publisher_sign:
+publisher_sign:
 -Sertifikat za digitalno potpisivanje poruka od strane Publisher-a.
+->Personal, ThrustedPeople
 
 //WrongSign:
 //-Sertifikat za testiranje grešaka u verifikaciji digitalnih potpisa.

@@ -12,7 +12,7 @@ namespace SecurityManager
     //Implementation of AES encryption in ECB mode
     public class AES_Symm_Algorithm
     {
-        private const string DefaultKey = "oib"; // Default ključ
+        private const string DefaultKey = "oib"; // Default key
 
         /// <summary>
         /// Encrypts any object using AES in ECB mode.

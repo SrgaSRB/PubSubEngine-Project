@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Contracts;
 using SecurityManager;
+using Logging;
 
 namespace SubscriberClient
 {
@@ -22,7 +23,7 @@ namespace SubscriberClient
 
             string clienName = "publisher";
             string clientNameSign = clienName + "_sign";
-            X509Certificate2 certificate = CertificateManager.GetCertificateFromStorage(StoreName.My, StoreLocation.LocalMachine, clientNameSign);
+            X509Certificate2 certificate = CertificateManager.GetCertificateFromStorage(StoreName.TrustedPeople, StoreLocation.LocalMachine, clientNameSign);
 
             if (DigitalSignature.Verify(topicEncrypt, HashAlgorithm.SHA1, alarmEncrypt.Signature, certificate))
             {
@@ -41,7 +42,7 @@ namespace SubscriberClient
                 Console.WriteLine(consoleMsg);
                 msgLog.Add(msg);
 
-                SaveAlarmToDatabase(msg);
+                SaveAlarmToDatabase(msg, alarmEncrypt, certificate);
 
                 Program.PrintOptions();
             }
@@ -64,10 +65,19 @@ namespace SubscriberClient
             Program.PrintOptions();
         }
 
-        private void SaveAlarmToDatabase(string msg)
+        private void SaveAlarmToDatabase(string msg, Alarm alarm, X509Certificate2 certificate)
         {
             File.AppendAllText("alarms.txt", msg + Environment.NewLine);
             Console.WriteLine("\nAlarm saved to database.");
+
+            // Da li treba alarm dekriptovati
+            string timestamp = DateTime.Now.ToString();
+            string databaseName = "alarms.txt";
+            string entityId = alarm.Id.ToString(); 
+            string digitalSignature = Convert.ToBase64String(alarm.Signature);
+            string publicKey = Convert.ToBase64String(certificate.GetPublicKey());
+
+            Audit.DataInserted(timestamp, databaseName, entityId, digitalSignature, publicKey);
         }
 
     }

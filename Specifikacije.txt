@@ -14,3 +14,21 @@ Na unapred definisani period vremena (koji se definiše prilikom instanciranja),
 
 
 Dodatno, u okviru custom Windows Event Loga Subscriberi loguju informaciju da je novi podatak upisan u bazu podataka. Log treba da obuhvati sledeće informacije: Timestamp, Ime baze podataka (tekstualnog fajla), ID entiteta u bazi, digitalni potpis i javni ključ publishera podatka.
+
+
+New-EventLog -LogName "PubSubEngineLog" -Source "New-EventLog -LogName "MySecTest" -Source "SecurityManager.Audit"
+Timestamp[{0}]/t/t Baza podataka[{1}]/t/t EntitetId[{2}]/t/t DigitalniPotpis[{3}]/t/t JavniKljuc[{4}] 
+
+------
+TO DO:
+proverii da li se subscriber-i odjavljuju sa publishera kada se on ugasi,
+proveriti da li subscriber prima alarme u svom opsegu ili sve
+ceo zadnji pasus
+dodati unapred definisani period vremena za objavu publishera
+
+Pitanja za asistenta:
+Da li digitalnipotpis saljem od klijenta do drugog klijenta gde ga taj drugi klijenat verifikuje ili ga verifikuje server
+
+U zadatku pise da klijent publisher salje poruku sa digitalnim potpisom, a subscriber ga verifikuje. Da bi subscriber verifikovao potpis mora dobaviti sertifikat od publishera, a da bi ga dobavio sertifikat treba da se nalazi u ThrustedPeople (da li)? Pitam zbog toga jer smo inace sertifikat servera stavljali u ThrustedPople.
+
+"
