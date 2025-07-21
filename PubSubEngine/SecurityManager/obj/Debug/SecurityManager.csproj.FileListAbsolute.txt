@@ -7,3 +7,12 @@ C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SecurityManager\obj\Debug\Secu
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SecurityManager\bin\Debug\Newtonsoft.Json.dll
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SecurityManager\bin\Debug\Newtonsoft.Json.xml
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SecurityManager\obj\Debug\Security.B8F67C5A.Up2Date
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\SecurityManager\bin\Debug\SecurityManager.dll
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\SecurityManager\bin\Debug\SecurityManager.pdb
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\SecurityManager\bin\Debug\Newtonsoft.Json.dll
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\SecurityManager\bin\Debug\Newtonsoft.Json.xml
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\SecurityManager\obj\Debug\SecurityManager.csproj.AssemblyReference.cache
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\SecurityManager\obj\Debug\SecurityManager.csproj.CoreCompileInputs.cache
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\SecurityManager\obj\Debug\Security.B8F67C5A.Up2Date
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\SecurityManager\obj\Debug\SecurityManager.dll
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\SecurityManager\obj\Debug\SecurityManager.pdb

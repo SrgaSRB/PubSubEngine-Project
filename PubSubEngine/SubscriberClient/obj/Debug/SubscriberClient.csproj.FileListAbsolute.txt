@@ -17,3 +17,23 @@ C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SubscriberClient\bin\Debug\New
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SubscriberClient\bin\Debug\Newtonsoft.Json.xml
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SubscriberClient\bin\Debug\Logging.dll
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\SubscriberClient\bin\Debug\Logging.pdb
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\SubscriberClient\bin\Debug\SubscriberClient.exe.config
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\SubscriberClient\bin\Debug\SubscriberClient.exe
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\SubscriberClient\bin\Debug\SubscriberClient.pdb
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\SubscriberClient\bin\Debug\Contracts.dll
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\SubscriberClient\bin\Debug\Logging.dll
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\SubscriberClient\bin\Debug\PubSubEngine.exe
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\SubscriberClient\bin\Debug\SecurityManager.dll
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\SubscriberClient\bin\Debug\Newtonsoft.Json.dll
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\SubscriberClient\bin\Debug\Contracts.pdb
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\SubscriberClient\bin\Debug\Logging.pdb
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\SubscriberClient\bin\Debug\PubSubEngine.pdb
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\SubscriberClient\bin\Debug\PubSubEngine.exe.config
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\SubscriberClient\bin\Debug\SecurityManager.pdb
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\SubscriberClient\bin\Debug\Newtonsoft.Json.xml
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\SubscriberClient\obj\Debug\SubscriberClient.csproj.AssemblyReference.cache
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\SubscriberClient\obj\Debug\SubscriberClient.exe.config
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\SubscriberClient\obj\Debug\SubscriberClient.csproj.CoreCompileInputs.cache
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\SubscriberClient\obj\Debug\Subscrib.E4DC4EA2.Up2Date
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\SubscriberClient\obj\Debug\SubscriberClient.exe
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\SubscriberClient\obj\Debug\SubscriberClient.pdb

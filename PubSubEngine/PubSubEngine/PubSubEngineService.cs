@@ -23,29 +23,40 @@ namespace PubSubEngine
 
         public bool Publish(string topicEncrypt, Alarm alarmEncript)
         {
-
             try
             {
-                /*
-                string clienName = Formatter.ParseName(ServiceSecurityContext.Current.PrimaryIdentity.Name);
-                string clientNameSign = clienName + "_sign";
-                X509Certificate2 certificate = CertificateManager.GetCertificateFromStorage(StoreName.ThrustedPeople, StoreLocation.LocalMachine, clientNameSign);
+                string clientName = Formatter.ParseName(ServiceSecurityContext.Current.PrimaryIdentity.Name);
+                string clientSignName = clientName + "_sign";
 
-                if (DigitalSignature.Verify(topicEncrypt, HashAlgorithm.SHA1, alarmEncript.Signature, certificate))
+                Console.WriteLine("Publish -> From client: {0}", clientName);
+
+                X509Certificate2 certificate = CertificateManager.GetCertificateFromStorage(
+                    StoreName.TrustedPeople, StoreLocation.LocalMachine, clientSignName);
+
+                bool isValid = false;
+                try
                 {
-                    Console.WriteLine("Publish -> Sign is valid");
+                    isValid = DigitalSignature.Verify(topicEncrypt, HashAlgorithm.SHA1, alarmEncript.Signature, certificate);
                 }
-                else
+                catch (Exception ex)
                 {
-                    Console.WriteLine("Publish -> Sign is invalid");
+                    Console.WriteLine("DigitalSignature.Verify failed: " + ex.Message);
                     return false;
                 }
-                */
+
+                if (!isValid)
+                {
+                    Console.WriteLine("Publish -> Invalid digital signature from client: " + clientName);
+                    return false;
+                }
+
+                Console.WriteLine("Publish -> Signature is valid");
 
                 if (!alarms.ContainsKey(topicEncrypt))
                 {
                     alarms[topicEncrypt] = new List<Alarm>();
                 }
+
                 alarms[topicEncrypt].Add(alarmEncript);
 
                 NotifySubscribers(topicEncrypt, alarmEncript);
@@ -59,6 +70,7 @@ namespace PubSubEngine
                 return false;
             }
         }
+
 
         public bool Subscribe(string topicEncrypt, string minRiskEncrypt, string maxRiskEncrypt)
         {
@@ -116,6 +128,7 @@ namespace PubSubEngine
         {
             string clienName = Formatter.ParseName(ServiceSecurityContext.Current.PrimaryIdentity.Name);
             string clientNameSign = clienName + "_sign";
+            Console.WriteLine("RegisterPublisher -> Client Name: {0}", clienName);
             X509Certificate2 certificate = CertificateManager.GetCertificateFromStorage(StoreName.TrustedPeople, StoreLocation.LocalMachine, clientNameSign);
             try
             {
@@ -169,7 +182,7 @@ namespace PubSubEngine
         {
             foreach (var subscriberList in topicSubscribers.Values)
             {
-                foreach (var (callback, _, _) in subscriberList) 
+                foreach (var (callback, _, _) in subscriberList)
                 {
                     try
                     {
@@ -199,6 +212,13 @@ namespace PubSubEngine
 
         public bool LogOutPublisher(string topicEncrypt, byte[] sign)
         {
+            string clienName = Formatter.ParseName(ServiceSecurityContext.Current.PrimaryIdentity.Name);
+            string clientNameSign = clienName + "_sign";
+            X509Certificate2 certificate = CertificateManager.GetCertificateFromStorage(StoreName.TrustedPeople, StoreLocation.LocalMachine, clientNameSign);
+
+            if (!DigitalSignature.Verify(topicEncrypt, HashAlgorithm.SHA1, sign, certificate))
+                return false;
+
             try
             {
                 if (topics.Contains(topicEncrypt))

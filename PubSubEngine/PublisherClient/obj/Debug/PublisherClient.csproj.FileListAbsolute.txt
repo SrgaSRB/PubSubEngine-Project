@@ -15,3 +15,21 @@ C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PublisherClient\bin\Debug\PubS
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PublisherClient\bin\Debug\PubSubEngine.exe.config
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PublisherClient\bin\Debug\Newtonsoft.Json.dll
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PublisherClient\bin\Debug\Newtonsoft.Json.xml
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\PublisherClient\bin\Debug\PublisherClient.exe.config
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\PublisherClient\bin\Debug\PublisherClient.exe
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\PublisherClient\bin\Debug\PublisherClient.pdb
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\PublisherClient\bin\Debug\Contracts.dll
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\PublisherClient\bin\Debug\PubSubEngine.exe
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\PublisherClient\bin\Debug\SecurityManager.dll
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\PublisherClient\bin\Debug\Newtonsoft.Json.dll
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\PublisherClient\bin\Debug\Contracts.pdb
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\PublisherClient\bin\Debug\PubSubEngine.pdb
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\PublisherClient\bin\Debug\PubSubEngine.exe.config
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\PublisherClient\bin\Debug\SecurityManager.pdb
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\PublisherClient\bin\Debug\Newtonsoft.Json.xml
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\PublisherClient\obj\Debug\PublisherClient.csproj.AssemblyReference.cache
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\PublisherClient\obj\Debug\PublisherClient.exe.config
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\PublisherClient\obj\Debug\PublisherClient.csproj.CoreCompileInputs.cache
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\PublisherClient\obj\Debug\Publishe.0A35BD47.Up2Date
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\PublisherClient\obj\Debug\PublisherClient.exe
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\PublisherClient\obj\Debug\PublisherClient.pdb

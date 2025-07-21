@@ -20,13 +20,20 @@ namespace SecurityManager
         /// <param name="certificate"> certificate to be validate </param>
         public override void Validate(X509Certificate2 certificate)
         {
-            /// This will take service's certificate from storage
-            X509Certificate2 srvCert = CertificateManager.GetCertificateFromStorage(StoreName.My, StoreLocation.LocalMachine, Formatter.ParseName(WindowsIdentity.GetCurrent().Name));
+            if (DateTime.Now < certificate.NotBefore || DateTime.Now > certificate.NotAfter)
+                throw new Exception("Certificate is expired or not yet valid.");
+
+            X509Certificate2 srvCert =
+                CertificateManager.GetCertificateFromStorage(StoreName.My,
+                                                             StoreLocation.LocalMachine,
+                                                             Formatter.ParseName(WindowsIdentity.GetCurrent().Name));
 
             if (!certificate.Issuer.Equals(srvCert.Issuer))
-            {
-                throw new Exception("Certificate is not from the valid issuer.");
-            }
+                throw new Exception("Certificate issuer is not PubSubEngine.");
+
+            if (!certificate.Subject.Contains("CN=publisher") &&
+                !certificate.Subject.Contains("CN=subscriber"))
+                throw new Exception("Unexpected certificate CN.");
         }
     }
 }

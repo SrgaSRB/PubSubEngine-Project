@@ -12,3 +12,18 @@ C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PubSubEngine\bin\Debug\Securit
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PubSubEngine\bin\Debug\SecurityManager.pdb
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PubSubEngine\bin\Debug\Newtonsoft.Json.dll
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\PubSubEngine\bin\Debug\Newtonsoft.Json.xml
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\PubSubEngine\bin\Debug\PubSubEngine.exe.config
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\PubSubEngine\bin\Debug\PubSubEngine.exe
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\PubSubEngine\bin\Debug\PubSubEngine.pdb
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\PubSubEngine\bin\Debug\Contracts.dll
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\PubSubEngine\bin\Debug\SecurityManager.dll
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\PubSubEngine\bin\Debug\Newtonsoft.Json.dll
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\PubSubEngine\bin\Debug\Contracts.pdb
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\PubSubEngine\bin\Debug\SecurityManager.pdb
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\PubSubEngine\bin\Debug\Newtonsoft.Json.xml
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\PubSubEngine\obj\Debug\PubSubEngine.csproj.AssemblyReference.cache
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\PubSubEngine\obj\Debug\PubSubEngine.exe.config
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\PubSubEngine\obj\Debug\PubSubEngine.csproj.CoreCompileInputs.cache
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\PubSubEngine\obj\Debug\PubSubEn.93DB00DD.Up2Date
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\PubSubEngine\obj\Debug\PubSubEngine.exe
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\PubSubEngine\obj\Debug\PubSubEngine.pdb

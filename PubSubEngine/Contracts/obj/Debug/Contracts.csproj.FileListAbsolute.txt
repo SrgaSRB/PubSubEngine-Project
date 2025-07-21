@@ -11,3 +11,16 @@ C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Contracts\bin\Debug\Newtonsoft
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Contracts\bin\Debug\SecurityManager.pdb
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Contracts\bin\Debug\Newtonsoft.Json.xml
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Contracts\obj\Debug\Contracts.csproj.Up2Date
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\Contracts\bin\Debug\Contracts.dll
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\Contracts\bin\Debug\Contracts.pdb
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\Contracts\bin\Debug\SecurityManager.dll
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\Contracts\bin\Debug\Newtonsoft.Json.dll
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\Contracts\bin\Debug\SecurityManager.pdb
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\Contracts\bin\Debug\Newtonsoft.Json.xml
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\Contracts\obj\Debug\Contracts.csproj.AssemblyReference.cache
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\Contracts\obj\Debug\Contracts.AlarmMessagesRES.resources
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\Contracts\obj\Debug\Contracts.csproj.GenerateResource.cache
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\Contracts\obj\Debug\Contracts.csproj.CoreCompileInputs.cache
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\Contracts\obj\Debug\Contracts.csproj.Up2Date
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\Contracts\obj\Debug\Contracts.dll
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\Contracts\obj\Debug\Contracts.pdb

@@ -6,3 +6,11 @@ C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Logging\obj\Debug\Logging.dll
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Logging\obj\Debug\Logging.pdb
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Logging\obj\Debug\Logging.AuditEventFile.resources
 C:\Users\SRDJAN\PubSubEngine Project\PubSubEngine\Logging\obj\Debug\Logging.csproj.GenerateResource.cache
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\Logging\bin\Debug\Logging.dll
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\Logging\bin\Debug\Logging.pdb
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\Logging\obj\Debug\Logging.csproj.AssemblyReference.cache
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\Logging\obj\Debug\Logging.AuditEventFile.resources
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\Logging\obj\Debug\Logging.csproj.GenerateResource.cache
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\Logging\obj\Debug\Logging.csproj.CoreCompileInputs.cache
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\Logging\obj\Debug\Logging.dll
+C:\Users\SRDJAN\Desktop\Projects\PubSubEngine\Srdjan\PubSubEngine-Project\PubSubEngine\Logging\obj\Debug\Logging.pdb

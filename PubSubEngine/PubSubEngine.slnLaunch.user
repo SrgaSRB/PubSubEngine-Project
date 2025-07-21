@@ -26,6 +26,22 @@
       {
         "Path": "SubscriberClient\\SubscriberClient.csproj",
         "Action": "Start"
+      },
+      {
+        "Path": "PubSubEngine\\PubSubEngine.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "SecurityManager\\SecurityManager.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Logging\\Logging.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Contracts\\Contracts.csproj",
+        "Action": "Start"
       }
     ]
   }

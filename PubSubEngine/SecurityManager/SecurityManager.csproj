@@ -47,7 +47,6 @@
   <ItemGroup>
     <Compile Include="CertificateManager.cs" />
     <Compile Include="ClientCertValidator.cs" />
-    <Compile Include="CustomValidator.cs" />
     <Compile Include="DigitalSignature.cs" />
     <Compile Include="AES_Symm_Algorithm.cs" />
     <Compile Include="Formatter.cs" />

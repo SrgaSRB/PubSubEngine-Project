@@ -19,3 +19,16 @@ publisher_sign:
 
 //WrongSign:
 //-Sertifikat za testiranje grešaka u verifikaciji digitalnih potpisa.
+
+makecert -n "CN=PubSubEngineCA" -r -sv PubSubEngineCA.pvk PubSubEngineCA.cer
+
+makecert -iv PubSubEngineCA.pvk -ic PubSubEngineCA.cer -n "CN=pubsubengine" -pe -sky exchange -sv PubSubService.pvk PubSubService.cer -sr localmachine -ss My 
+
+makecert -iv PubSubEngineCA.pvk -ic PubSubEngineCA.cer -n "CN=publisher" -pe -sky exchange -sv Publisher.pvk Publisher.cer -sr currentuser -ss My
+pvk2pfx -pvk Publisher.pvk -spc Publisher.cer -pfx Publisher.pfx -pi 1234
+
+makecert -iv PubSubEngineCA.pvk -ic PubSubEngineCA.cer -n "CN=subscriber" -pe -sky exchange -sv Subscriber.pvk Subscriber.cer -sr currentuser -ss My
+pvk2pfx -pvk Subscriber.pvk -spc Subscriber.cer -pfx Subscriber.pfx -pi 1234
+
+makecert -iv PubSubEngineCA.pvk -ic PubSubEngineCA.cer -n "CN=publisher_sign" -pe -sky signature -sv PublisherSign.pvk PublisherSign.cer -sr currentuser -ss My
+pvk2pfx -pvk PublisherSign.pvk -spc PublisherSign.cer -pfx PublisherSign.pfx -pi 1234

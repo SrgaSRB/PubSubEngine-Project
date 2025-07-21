@@ -20,9 +20,9 @@ namespace PublisherClient
         static void Main(string[] args)
         {
             IPublisherService proxy;
+
             try
             {
-
                 var binding = new NetTcpBinding(SecurityMode.Transport);
                 binding.Security.Transport.ClientCredentialType = TcpClientCredentialType.Certificate;
 
@@ -111,6 +111,7 @@ namespace PublisherClient
                             Console.WriteLine("Error: Signature creation failed.");
                             return;
                         }
+
                         if (proxy.LogOutPublisher(message, signature))
                         {
                             Console.WriteLine("Publisher successfuly logout! Press Enter to close program...");

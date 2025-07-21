@@ -66,6 +66,11 @@ namespace PubSubEngine
                 Console.WriteLine($"Error: {ex.Message}");
                 Console.WriteLine($"Stack Trace: {ex.StackTrace}");
             }
+            finally
+            {
+                Console.WriteLine("Services stopped. Press Enter to exit.");
+            }
+
         }
     }
 }

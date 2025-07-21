@@ -19,31 +19,42 @@ namespace SubscriberClient
     {
         static void Main(string[] args)
         {
-            var callback = new SubscriberCallback();
-            var context = new InstanceContext(callback);
+            ISubscriberService proxy;
 
-            // Binding sa sigurnosnim podešavanjima
-            var binding = new NetTcpBinding(SecurityMode.Transport);
-            binding.Security.Transport.ClientCredentialType = TcpClientCredentialType.Certificate;
+            try
+            {
+                var callback = new SubscriberCallback();
+                var context = new InstanceContext(callback);
 
-            // Endpoint adresa servera
-            var address = new EndpointAddress(new Uri("net.tcp://localhost:8081/Subscriber"),
-                                              new X509CertificateEndpointIdentity(CertificateManager.GetCertificateFromStorage(StoreName.TrustedPeople, StoreLocation.LocalMachine, "pubsubengine")));
+                // Binding sa sigurnosnim podešavanjima
+                var binding = new NetTcpBinding(SecurityMode.Transport);
+                binding.Security.Transport.ClientCredentialType = TcpClientCredentialType.Certificate;
 
-            // Kreiranje fabrike kanala sa Duplex komunikacijom
-            var factory = new DuplexChannelFactory<ISubscriberService>(context, binding, address);
+                // Endpoint adresa servera
+                var address = new EndpointAddress(new Uri("net.tcp://localhost:8081/Subscriber"),
+                                                  new X509CertificateEndpointIdentity(CertificateManager.GetCertificateFromStorage(StoreName.TrustedPeople, StoreLocation.LocalMachine, "pubsubengine")));
 
-            // Podešavanje sertifikata za klijenta
-            string cltCertCN = Formatter.ParseName(WindowsIdentity.GetCurrent().Name);
-            Console.WriteLine("Welcome {0}", cltCertCN);
+                // Kreiranje fabrike kanala sa Duplex komunikacijom
+                var factory = new DuplexChannelFactory<ISubscriberService>(context, binding, address);
 
-            factory.Credentials.ClientCertificate.Certificate = CertificateManager.GetCertificateFromStorage(StoreName.My, StoreLocation.LocalMachine, cltCertCN);
-            factory.Credentials.ServiceCertificate.Authentication.CertificateValidationMode = X509CertificateValidationMode.Custom;
-            factory.Credentials.ServiceCertificate.Authentication.CustomCertificateValidator = new ClientCertValidator();
-            factory.Credentials.ServiceCertificate.Authentication.RevocationMode = X509RevocationMode.NoCheck;
+                // Podešavanje sertifikata za klijenta
+                string cltCertCN = Formatter.ParseName(WindowsIdentity.GetCurrent().Name);
+                Console.WriteLine("Welcome {0}", cltCertCN);
 
-            // Kreiranje proxy-a
-            var proxy = factory.CreateChannel();
+                factory.Credentials.ClientCertificate.Certificate = CertificateManager.GetCertificateFromStorage(StoreName.My, StoreLocation.LocalMachine, cltCertCN);
+                factory.Credentials.ServiceCertificate.Authentication.CertificateValidationMode = X509CertificateValidationMode.Custom;
+                factory.Credentials.ServiceCertificate.Authentication.CustomCertificateValidator = new ClientCertValidator();
+                factory.Credentials.ServiceCertificate.Authentication.RevocationMode = X509RevocationMode.NoCheck;
+
+                // Kreiranje proxy-a
+                proxy = factory.CreateChannel();
+
+            }catch (Exception e)
+            {
+                Console.WriteLine("Error creating channel to server.");
+                Console.WriteLine(e.Message);
+                return;
+            }
 
             try
             {

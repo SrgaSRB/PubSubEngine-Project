@@ -67,17 +67,25 @@ namespace SubscriberClient
 
         private void SaveAlarmToDatabase(string msg, Alarm alarm, X509Certificate2 certificate)
         {
-            File.AppendAllText("alarms.txt", msg + Environment.NewLine);
-            Console.WriteLine("\nAlarm saved to database.");
+            try
+            {
+                File.AppendAllText("alarms.txt", msg + Environment.NewLine);
+                Console.WriteLine("\nAlarm saved to database.");
 
-            // Da li treba alarm dekriptovati
-            string timestamp = DateTime.Now.ToString();
-            string databaseName = "alarms.txt";
-            string entityId = alarm.Id.ToString(); 
-            string digitalSignature = Convert.ToBase64String(alarm.Signature);
-            string publicKey = Convert.ToBase64String(certificate.GetPublicKey());
+                // Da li treba alarm dekriptovati
+                string timestamp = DateTime.Now.ToString();
+                string databaseName = "alarms.txt";
+                string entityId = alarm.Id.ToString();
+                string digitalSignature = Convert.ToBase64String(alarm.Signature);
+                string publicKey = Convert.ToBase64String(certificate.GetPublicKey());
 
-            Audit.DataInserted(timestamp, databaseName, entityId, digitalSignature, publicKey);
+                Audit.DataInserted(timestamp, databaseName, entityId, digitalSignature, publicKey);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine("Error while trying to save alarm to database. Error: " + ex.Message);
+                throw new ArgumentException("Error while trying to save alarm to database.");
+            }
         }
 
     }

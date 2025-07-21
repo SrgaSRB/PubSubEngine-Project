@@ -32,7 +32,15 @@ namespace SecurityManager
             if (customLog != null)
             {
                 string message = AuditEvents.LogDatabaseEntry(timestamp, databaseName, entityId, digitalSignature, publicKey);
-                customLog.WriteEntry(message, EventLogEntryType.Information);
+                try
+                {
+                    customLog.WriteEntry(message, EventLogEntryType.Information);
+                    Console.WriteLine("Upisano u EventLog.");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Greška pri upisu u EventLog: " + ex.Message);
+                }
             }
             else
             {
